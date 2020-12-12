@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  console.log("Inside javascript file");
   // Variable Declarations
   var isExpandedAbt;
   var isExpandedContact;
