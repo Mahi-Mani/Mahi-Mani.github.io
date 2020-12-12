@@ -16,15 +16,6 @@
   margin-top: 25%;
   text-align: center;
 }
-
-
-
-.carousel-item{
-  height: 165px;
-} 
-.carousel-item img{
-  height: 165px;
-}
 /* header{
   position:fixed;
 } */
@@ -65,9 +56,6 @@ hr{
 .text{
   font-family: 'Quicksand', sans-serif;
   color:#21618c;
-}
-header{
-  background-color: #21618c;
 }
 #name{
   margin-top: 0px;
