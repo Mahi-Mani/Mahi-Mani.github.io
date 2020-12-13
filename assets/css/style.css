@@ -32,7 +32,8 @@ header {
 }
 .nav-link, 
 .container,
-#about {
+#about,
+.scroll > a {
   color: white !important;
 }
 .content {
