@@ -1,9 +1,16 @@
 $(document).ready(function () {
-  console.log("Inside javascript file");
   // Variable Declarations
   var isExpandedAbt;
   var isExpandedContact;
 
+  // $(window).scroll(function () {
+  //   if($(this).scrollTop() > 200) {
+  //     $(".navbar").fadeIn(500);
+  //   } else {
+  //     $(".navbar").fadeOut(500);
+  //   }
+  // })
+  // On click of skills button
   $("#learnOne").on("click", function (event) {
       isExpandedAbt = $("#learnOne").attr("aria-expanded");
       updateClass();
