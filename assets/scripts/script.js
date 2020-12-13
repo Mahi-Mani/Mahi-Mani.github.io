@@ -3,13 +3,15 @@ $(document).ready(function () {
   var isExpandedAbt;
   var isExpandedContact;
 
-  // $(window).scroll(function () {
-  //   if($(this).scrollTop() > 200) {
-  //     $(".navbar").fadeIn(500);
-  //   } else {
-  //     $(".navbar").fadeOut(500);
-  //   }
-  // })
+  $(window).scroll(function () {
+    if($(this).scrollTop() > 750) {
+      // $(".navbar").fadeIn(500);
+      $(".navbar").addClass("bg-dark");
+    } else {
+      // $(".navbar").fadeOut(500);
+      $(".navbar").removeClass("bg-dark");
+    }
+  })
   // On click of skills button
   $("#learnOne").on("click", function (event) {
       isExpandedAbt = $("#learnOne").attr("aria-expanded");
