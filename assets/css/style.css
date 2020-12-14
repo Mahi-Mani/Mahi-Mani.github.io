@@ -37,6 +37,9 @@
 .scroll > a {
   color: white !important;
 }
+.card-text {
+  color: #21618c;
+}
 .content {
   text-align: center;
   margin-top: 25%;
