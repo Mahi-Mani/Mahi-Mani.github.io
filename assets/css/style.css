@@ -11,7 +11,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.portfolio {
+  color: white;
+  text-align: center;
+}
 .image {
   margin: 0 auto;
 }
