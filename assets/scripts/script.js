@@ -20,73 +20,73 @@ $(document).ready(function () {
     },
     {
       "id": 2,
-      "name": "ToDoList",
-      "link": "https://mahi-mani.github.io/ToDoList/",
-      "desc": " Application that helps user to make a note of their toDoList. This is a single page React application that gives users a good visualize effect that each list is coloured differently",
-      "image": "./assets/images/todolist.jpg"
-    },
-    {
-      "id": 3,
       "name": "Train Scheduler",
       "link": "https://mahi-mani.github.io/TrainScheduler/",
       "desc": "Train Scheduler application benefits user on showcasing schedules of different train user wishes to view. User can add new train at any point to view schedule. Minutes away field and next arrival keeps updating every minute so that user can keep track of their train.",
-      "image": "./assets/images/train.jpg"
+      "image": "./assets/images/downloads/train.jpg"
+    },
+    {
+      "id": 3,
+      "name": "ToDoList",
+      "link": "https://mahi-mani.github.io/ToDoList/",
+      "desc": " Application that helps user to make a note of their toDoList. This is a single page React application that gives users a good visualize effect that each list is coloured differently",
+      "image": "./assets/images/downloads/todolist.png"
     },
     {
       "id": 4,
       "name": "Memory Game",
       "link": "https://mahi-mani.github.io/Memory-Game/",
       "desc": "This is an entertaining application as one could capture their lovely pokemons. As and when an user catches a pokemon, score is updated. An user can catch a pokemon only once. User will lose the game if a pokemon is captured twice. Try to break the top score recorded.",
-      "image": "./assets/images/memory.jpg"
+      "image": "./assets/images/downloads/memory.jpg"
     },
     {
       "id": 5,
       "name": "Baefit",
       "link": "https://bryanjacinto1994.github.io/BaeFit-Workouts/",
       "desc": "A website that combines exercising with other aspects to make it more enjoyable. The workouts are designed for everyone, from beginners to veterans. Trail API finds scenic jogging routes for runners! Utilised spotify API for users who love to listen to songs while workout! All in one Application!",
-      "image": "./assets/images/baefit.jpg"
+      "image": "./assets/images/downloads/baefit.jpg"
     },
     {
       "id": 6,
       "name": "Emoji Finder",
       "link": "https://mahi-mani.github.io/Emoji-Finder/",
       "desc": "This is a simple search application exclusively for emoticons. One could search for an emoji from list of emoticons",
-      "image": "./assets/images/emojifinder.jpg"
+      "image": "./assets/images/downloads/emojifinder.jpg"
     },
     {
       "id": 7,
       "name": "Friend Finder",
       "link": "https://polar-falls-35679.herokuapp.com/",
       "desc": "This application's functionality is quite entertaining as it finds a closely associated friend. Application asks about 10 questions to the user, so that application has some knowledge on the user. Having learnt that, user is provided with an closely associated character from Friends series. This application is quite enjoyable as it points out your closely associated friend",
-      "image": "./assets/images/friend.jpg"
+      "image": "./assets/images/downloads/friend.png"
     },
     {
       "id": 8,
       "name": "Dictionary Scrapper",
       "link": "https://quiet-dusk-47394.herokuapp.com/",
       "desc": "NewScrapper is all about scrapping a website. This application works on scrapping https: //www.dictionaryofobscuresorrows.com/ website in the background. Using that, this application creates a public API in the backend and makes manipulations on those objects and provides an useful product to have a well use of this dictionary. User can delete words at any point of time. They could even save their favorite words so that they can revisit later. They can even delete words that are no longer needed.",
-      "image": "./assets/images/dictionary.jpg"
+      "image": "./assets/images/downloads/dictionary.jpg"
     },
     {
       "id": 9,
       "name": "Crystal Collector",
       "link": "https://mahi-mani.github.io/unit-4-game/",
       "desc": "You will be given a random number at the start of the game. There are four crystals below. By clicking on the crystal you will add a specific amounts of points to your total score. You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal",
-      "image": "./assets/images/crystal.jpg"
+      "image": "./assets/images/downloads/crystal.png"
     },
     {
       "id": 10,
       "name": "Trivia Game",
       "link": "https://mahi-mani.github.io/TriviaGame/",
       "desc": "It's a quiz game. You will have 10 timed questions. You will be shown correct answers when answered incorrectly. Review your total score at the end and restart the game.",
-      "image": "./assets/images/trivia.jpg"
+      "image": "./assets/images/downloads/trivia.jpg"
     },
     {
       "id": 11,
       "name": "Psychic Game",
       "link": "https://mahi-mani.github.io/Psychic-Game/",
       "desc": "Built a game that guesses a character what computer thinks. Your guesses are compared with computer's guess and if both matches, you win otherwise you lose! You gave got 9 chances to guess correctly.",
-      "image": "./assets/images/psychic.jpg"
+      "image": "./assets/images/downloads/psychic.jpg"
     }
   ]
 
