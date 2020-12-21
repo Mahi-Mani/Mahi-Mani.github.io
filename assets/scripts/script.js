@@ -9,14 +9,14 @@ $(document).ready(function () {
       "name": "Google Books Search",
       "link": "https://murmuring-cove-96907.herokuapp.com/",
       "desc": "This application allows user to search for their desired books and will provide you with all online books available. User can view the book on website and can even save those books to keep track of it in the future",
-      "image": "./assets/images/google.jpg"
+      "image": "./assets/images/downloads/booksearch.jpg"
     },
     {
       "id": 1,
       "name": "Vocabulary Builder",
       "link": "https://protected-reef-60148.herokuapp.com",
       "desc": "Application helps user to build their vocabulary skills as it would allow users to add a new word and once they have mastered in learning a new word, user will be able to push to mastered table. If user wishes to learn the word again, then user can move that word to learning table to keep track of. This application has access to a number of users. User will be able to keep track of all those words learnt/mastered by querying the application with respective names. Any one can view all learners of Vocabulary-Builder. Also, user can delete a word when no longer needed. Developed this application on inspiration from Kindle's Vocabulary Builder",
-      "image": "./assets/images/vocabulary.jpg"
+      "image": "./assets/images/downloads/vocabulary.jpg"
     },
     {
       "id": 2,
@@ -129,33 +129,53 @@ $(document).ready(function () {
   }
   console.log(projects);
   // Hook projects dom
-  for (var i = 0; i < 3; i++) {
-    if (i % 2 === 0 || i === 0) {
+  for (var i = 0; i < projects.length; i++) {
+    if (i % 2 === 0) {
       var rowDiv = $("<div>");
       rowDiv.addClass("row");
+      var col1Div = $("<div>");
+      col1Div.addClass("col-md-1 col-lg-1");
+      var col2Div = $("<div>");
+      col2Div.addClass("col-md-5 col-lg-5");
+      var img1Tag = $("<img>");
+      img1Tag.attr("src", projects[i].image);
+      img1Tag.attr("width", "570px");
+      img1Tag.attr("height", "460px");
+      col2Div.append(img1Tag);
+      rowDiv.append(col1Div);
+      rowDiv.append(col2Div);
+
+    } else {
+      var col3Div = $("<div>");
+      col3Div.addClass("col-md-5 col-lg-5");
+      var col4Div = $("<div>");
+      col4Div.addClass("col-md-1 col-lg-1");
+      var img2Tag = $("<img>");
+      img2Tag.attr("src", projects[i].image);
+      img2Tag.attr("width", "570px");
+      img2Tag.attr("height", "460");
+      col3Div.append(img2Tag);
+      rowDiv.append(col3Div);
+      rowDiv.append(col4Div);
     }
-    var col1Div = $("<div>");
-    col1Div.addClass("col-md-1 col-lg-1");
-    var col2Div = $("<div>");
-    col2Div.addClass("col-md-5 col-lg-5");
-    var col3Div = $("<div>");
-    col3Div.addClass("col-md-5 col-lg-5");
-    var col4Div = $("<div>");
-    col4Div.addClass("col-md-1 col-lg-1");
-    var img1Tag = $("<img>");
-    img1Tag.attr("src", "./assets/images/downloads/booksearch.jpg");
-    img1Tag.attr("width", "562px");
-    img1Tag.attr("height", "450px");
-    col2Div.append(img1Tag);
-    var img2Tag = $("<img>");
-    img2Tag.attr("src", "./assets/images/downloads/vocabulary.jpg");
-    img2Tag.attr("width", "562px");
-    img2Tag.attr("height", "450px");
-    col3Div.append(img2Tag);
-    rowDiv.append(col1Div);
-    rowDiv.append(col2Div);
-    rowDiv.append(col3Div);
-    rowDiv.append(col4Div);
+    // var col2Div = $("<div>");
+    // col2Div.addClass("col-md-5 col-lg-5");
+    // var col3Div = $("<div>");
+    // col3Div.addClass("col-md-5 col-lg-5");
+    // var img1Tag = $("<img>");
+    // img1Tag.attr("src", projects[i].image);
+    // img1Tag.attr("width", "570px");
+    // img1Tag.attr("height", "460px");
+    // col2Div.append(img1Tag);
+    // var img2Tag = $("<img>");
+    // img2Tag.attr("src", projects[i].image);
+    // img2Tag.attr("width", "570px");
+    // img2Tag.attr("height", "460");
+    // col3Div.append(img2Tag);
+    // rowDiv.append(col1Div);
+    // rowDiv.append(col2Div);
+    // rowDiv.append(col3Div);
+    // rowDiv.append(col4Div);
     $("#projects").append(rowDiv);
   }
 })
