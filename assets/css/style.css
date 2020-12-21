@@ -11,6 +11,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.image {
+  margin: 0 auto;
+}
 /* #home::after {
   content: "";
   background: url("../images/blue-background.jpg");

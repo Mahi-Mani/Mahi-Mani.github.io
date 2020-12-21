@@ -3,6 +3,7 @@ $(document).ready(function () {
   // Variable Declarations
   var isExpandedAbt;
   var isExpandedContact;
+  var rowDiv;
   const projects = [
     {
       "id": 0,
@@ -129,25 +130,31 @@ $(document).ready(function () {
   }
   console.log(projects);
   // Hook projects dom
-  var newDiv = $("<div>");
-  newDiv.addClass("row");
-  // $("#projects").append(newDiv);
-  var childDiv = $("<div>");
-  childDiv.addClass("col-md-2");
-  newDiv.append(childDiv);
   for (var i = 0; i < projects.length; i++) {
-    var innerChildDiv = $("<div>");
-    innerChildDiv.addClass("col-md-3");
-    var imgTag = $("<img>");
-    imgTag.attr("src", projects[i].image);
-    imgTag.attr("alt", projects[i].name);
-    imgTag.attr("width", "250px");
-    imgTag.attr("height", "250px");
-    innerChildDiv.append(imgTag);
-    newDiv.append(innerChildDiv);
+    if (i % 2 === 0) {
+      rowDiv = $("<div>");
+      rowDiv.addClass("row");
+    }
+    var col1Div = $("<div>");
+    col1Div.addClass("col-md-1 col-lg-1");
+    var col2Div = $("<div>");
+    col2Div.addClass("col-md-5 col-lg-5");
+    var col3Div = $("<div>");
+    col3Div.addClass("col-md-5 col-lg-5");
+    var img1Tag = $("<img>");
+    img1Tag.attr("src", "./assets/images/downloads/booksearch.jpg");
+    img1Tag.attr("width", "562px");
+    img1Tag.attr("height", "450px");
+    col1Div.append(img1Tag);
+    var img2Tag = $("<img>");
+    img2Tag.attr("src", "./assets/images/downloads/vocabulary.jpg");
+    img2Tag.attr("width", "562px");
+    img2Tag.attr("height", "450px");
+    col3Div.append(img2Tag);
+    rowDiv.append(col1Div);
+    rowDiv.append(col2Div);
+    rowDiv.append(col3Div);
+    rowDiv.append(col1Div);
+    $("#projects").append(rowDiv);
   }
-  var childDiv = $("<div>");
-  childDiv.addClass("col-md-1");
-  newDiv.append(childDiv);
-  $("#projects").append(newDiv);
 })
