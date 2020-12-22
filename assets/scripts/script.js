@@ -53,6 +53,7 @@ $(document).ready(function () {
       addAttribute(img1Tag, "src", projects[i].image);
       addAttribute(img1Tag, "width", "570px");
       addAttribute(img1Tag, "height", "460px");
+      addClassValue(img1Tag, "image");
       appendElement(col2Div, img1Tag);
       appendElement(rowDiv, col1Div);
       appendElement(rowDiv, col2Div);
@@ -65,6 +66,7 @@ $(document).ready(function () {
       addAttribute(img2Tag, "src", projects[i].image);
       addAttribute(img2Tag, "width", "570px");
       addAttribute(img2Tag, "height", "460px");
+      addClassValue(img2Tag, "image");
       appendElement(col3Div, img2Tag);
       appendElement(rowDiv, col3Div);
       appendElement(rowDiv, col4Div);
