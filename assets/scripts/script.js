@@ -25,8 +25,6 @@ $(document).ready(function () {
   })
   // Function that updates classes for collapsed elements
   function updateClass() {
-    console.log(`About : ${isExpandedAbt}`);
-    console.log(`Contact : ${isExpandedContact}`);
 
     if ((isExpandedContact === "false") && (isExpandedAbt === "false")) {
       $(".col1").addClass("col animated rotateIn");
@@ -46,32 +44,46 @@ $(document).ready(function () {
   for (var i = 0; i < projects.length; i++) {
     if (i % 2 === 0) {
       var rowDiv = $("<div>");
-      rowDiv.addClass("row");
+      addClassValue(rowDiv, "row");
       var col1Div = $("<div>");
-      col1Div.addClass("col-md-1 col-lg-1");
+      addClassValue(col1Div, "col-md-1 col-lg-1");
       var col2Div = $("<div>");
-      col2Div.addClass("col-md-5 col-lg-5");
+      addClassValue(col2Div, "col-md-5 col-lg-5");
       var img1Tag = $("<img>");
-      img1Tag.attr("src", projects[i].image);
-      img1Tag.attr("width", "570px");
-      img1Tag.attr("height", "460px");
-      col2Div.append(img1Tag);
-      rowDiv.append(col1Div);
-      rowDiv.append(col2Div);
-
+      addAttribute(img1Tag, "src", projects[i].image);
+      addAttribute(img1Tag, "width", "570px");
+      addAttribute(img1Tag, "height", "460px");
+      appendElement(col2Div, img1Tag);
+      appendElement(rowDiv, col1Div);
+      appendElement(rowDiv, col2Div);
     } else {
       var col3Div = $("<div>");
       col3Div.addClass("col-md-5 col-lg-5");
       var col4Div = $("<div>");
       col4Div.addClass("col-md-1 col-lg-1");
       var img2Tag = $("<img>");
-      img2Tag.attr("src", projects[i].image);
-      img2Tag.attr("width", "570px");
-      img2Tag.attr("height", "460");
-      col3Div.append(img2Tag);
-      rowDiv.append(col3Div);
-      rowDiv.append(col4Div);
+      addAttribute(img2Tag, "src", projects[i].image);
+      addAttribute(img2Tag, "width", "570px");
+      addAttribute(img2Tag, "height", "460px");
+      appendElement(col3Div, img2Tag);
+      appendElement(rowDiv, col3Div);
+      appendElement(rowDiv, col4Div);
     }
     $("#projects").append(rowDiv);
+  }
+
+  // Function to append an element
+  function appendElement(parent, child) {
+    parent.append(child);
+  }
+
+  // Function to add attribute
+  function addAttribute(element, key, value) {
+    element.attr(key, value);
+  }
+
+  // Function to add class
+  function addClassValue(element, value) {
+    element.addClass(value);
   }
 })
