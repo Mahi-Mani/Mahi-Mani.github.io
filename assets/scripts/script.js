@@ -158,24 +158,6 @@ $(document).ready(function () {
       rowDiv.append(col3Div);
       rowDiv.append(col4Div);
     }
-    // var col2Div = $("<div>");
-    // col2Div.addClass("col-md-5 col-lg-5");
-    // var col3Div = $("<div>");
-    // col3Div.addClass("col-md-5 col-lg-5");
-    // var img1Tag = $("<img>");
-    // img1Tag.attr("src", projects[i].image);
-    // img1Tag.attr("width", "570px");
-    // img1Tag.attr("height", "460px");
-    // col2Div.append(img1Tag);
-    // var img2Tag = $("<img>");
-    // img2Tag.attr("src", projects[i].image);
-    // img2Tag.attr("width", "570px");
-    // img2Tag.attr("height", "460");
-    // col3Div.append(img2Tag);
-    // rowDiv.append(col1Div);
-    // rowDiv.append(col2Div);
-    // rowDiv.append(col3Div);
-    // rowDiv.append(col4Div);
     $("#projects").append(rowDiv);
   }
 })
