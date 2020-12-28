@@ -49,11 +49,15 @@ $(document).ready(function () {
       addClassValue(col1Div, "col-md-1 col-lg-1");
       var col2Div = $("<div>");
       addClassValue(col2Div, "col-md-5 col-lg-5");
+      var overlayDiv = $("<div>");
+      addClassValue(overlayDiv, "text");
+      overlayDiv.text("Hello!");
       var img1Tag = $("<img>");
       addAttribute(img1Tag, "src", projects[i].image);
       addAttribute(img1Tag, "width", "570px");
       addAttribute(img1Tag, "height", "460px");
       addClassValue(img1Tag, "image");
+      // appendElement(col2Div, overlayDiv);
       appendElement(col2Div, img1Tag);
       appendElement(rowDiv, col1Div);
       appendElement(rowDiv, col2Div);
@@ -62,12 +66,16 @@ $(document).ready(function () {
       col3Div.addClass("col-md-5 col-lg-5");
       var col4Div = $("<div>");
       col4Div.addClass("col-md-1 col-lg-1");
+      var overlayDiv = $("<div>");
+      addClassValue(overlayDiv, "text");
+      overlayDiv.text("Hello!");
       var img2Tag = $("<img>");
       addAttribute(img2Tag, "src", projects[i].image);
       addAttribute(img2Tag, "width", "570px");
       addAttribute(img2Tag, "height", "460px");
       addClassValue(img2Tag, "image");
       appendElement(col3Div, img2Tag);
+      // appendElement(col3Div, overlayDiv);
       appendElement(rowDiv, col3Div);
       appendElement(rowDiv, col4Div);
     }
