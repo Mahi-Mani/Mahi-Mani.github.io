@@ -39,7 +39,7 @@ $(document).ready(function () {
       $(".col1").removeClass("col animated rotateIn");
     }
   }
-  console.log(projects);
+  
   // Hook projects dom
   for (var i = 0; i < projects.length; i++) {
     if (i % 2 === 0) {
