@@ -15,6 +15,10 @@
   color: white;
   text-align: center;
 }
+.work {
+  color: #21618c;
+  text-align: center;
+}
 .wrapper {
   position: relative;
   /* width: 50%; */
