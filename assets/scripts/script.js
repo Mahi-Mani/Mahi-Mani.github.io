@@ -60,7 +60,7 @@ $(document).ready(function () {
       addClassValue(overlayDiv, "overlay");
       var textDiv = $("<div>");
       addClassValue(textDiv, "textOverlay");
-      textDiv.text(`${projects[i].name}`);
+      textDiv.text(projects[i].name);
       appendElement(overlayDiv, textDiv);
       appendElement(wrapper, img1Tag);
       appendElement(wrapper, overlayDiv);
