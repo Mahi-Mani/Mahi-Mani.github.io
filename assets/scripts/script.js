@@ -80,9 +80,9 @@ $(document).ready(function () {
       addAttribute(img2Tag, "height", "460px");
       addClassValue(img2Tag, "image");
       var overlayDiv = $("<div>");
-      addClassValue(overlayDiv, "textOverlay");
+      addClassValue(overlayDiv, "overlay");
       var textDiv = $("<div>");
-      addClassValue(textDiv, "text");
+      addClassValue(textDiv, "textOverlay");
       textDiv.text(projects[i].name);
       appendElement(overlayDiv, textDiv);
       appendElement(wrapper, img2Tag);
