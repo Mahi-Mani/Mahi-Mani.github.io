@@ -12,12 +12,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.portfolio {
+.portfolio,
+.contact {
   color: white;
   text-align: center;
 }
-.work,
-.contact {
+.work {
   color: #21618c;
   text-align: center;
 }
