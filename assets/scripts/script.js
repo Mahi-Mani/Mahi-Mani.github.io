@@ -39,7 +39,7 @@ $(document).ready(function () {
       $(".col1").removeClass("col animated rotateIn");
     }
   }
-  
+
   // Hook projects dom
   for (var i = 0; i < projects.length; i++) {
     if (i % 2 === 0) {
@@ -92,6 +92,37 @@ $(document).ready(function () {
       appendElement(rowDiv, col4Div);
     }
     $("#projects").append(rowDiv);
+  }
+console.log(workExperience);
+  // Hook work experience to dom
+  for(var i=0; i<workExperience.length; i++) {
+    var rowDiv = $("<div>");
+    addClassValue(rowDiv, "row");
+    var col1Div = $("<div>");
+    addClassValue(col1Div, "col-md-2 col-lg-2");
+    var col2Div = $("<div>");
+    addClassValue(col2Div, "col-md-1 col-lg-1");
+    var col3Div = $("<div>");
+    addClassValue(col3Div, "col-md-7 col-lg-7");
+    var col4Div = $("<div>");
+    addClassValue(col4Div, "col-md-2 col-lg-2");
+    var verticalDiv = $("<div>");
+    addClassValue(verticalDiv, "bulletVl");
+    var ulTag = $("<ul>");
+    for(var j=0; j<workExperience[i].responsibilities.length; j++) {
+      ulTag.append("<li>" + workExperience[i].responsibilities[j] + "</li>");
+    }
+    appendElement(col2Div, "<i class='fas fa-dot-circle'></i>");
+    appendElement(col2Div, verticalDiv);
+    appendElement(col3Div, "<h1>" + workExperience[i].startDate.toUpperCase() + " - " + workExperience[i].endDate.toUpperCase() + "</h1>");
+    appendElement(col3Div, "<h2>" + workExperience[i].companyName + "</h2>");
+    appendElement(col3Div, "<h3>" + workExperience[i].role + "</h3>");
+    appendElement(col3Div, ulTag);
+    appendElement(rowDiv, col1Div);
+    appendElement(rowDiv, col2Div);
+    appendElement(rowDiv, col3Div);
+    appendElement(rowDiv, col4Div);
+    $("#workExperience").append(rowDiv);
   }
 
   // Function to append an element
