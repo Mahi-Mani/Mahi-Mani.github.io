@@ -123,6 +123,7 @@ console.log(workExperience);
     appendElement(rowDiv, col3Div);
     appendElement(rowDiv, col4Div);
     $("#workExperience").append(rowDiv);
+    $("#workExperience").append("<br>");
   }
 
   // Function to append an element
