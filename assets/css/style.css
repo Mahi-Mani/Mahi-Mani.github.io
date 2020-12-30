@@ -121,6 +121,9 @@ margin: auto;
   float:right;
   margin-left: 250px;
 }
+#contactContent {
+  margin: 13%;
+}
 
 .text{
   font-family: 'Quicksand', sans-serif;
