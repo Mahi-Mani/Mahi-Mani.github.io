@@ -60,8 +60,30 @@
   color: white !important;
   font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textOverlay1 {
+  color: white !important;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10%;
+  right: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textOverlay2 {
+  color: white !important;
+  font-size: 20px;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
