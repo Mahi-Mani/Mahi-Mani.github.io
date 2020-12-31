@@ -65,7 +65,8 @@ $(document).ready(function () {
       var textDiv2 = $("<div>");
       addClassValue(textDiv2, "textOverlay2");
       textDiv.text(projects[i].name);
-      textDiv1.append("<button type='button' class='btn btn-outline-light'> Learn More! </button>");
+      textDiv1.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal'
+       data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
       textDiv1.prepend("<hr style='border-top: 3px solid white'/>");
       textDiv2.append('<i class="fas fa-project-diagram"></i>');
       appendElement(textDiv, "<hr style='border-top: 3px solid white'/>");
@@ -99,7 +100,8 @@ $(document).ready(function () {
       var textDiv2 = $("<div>");
       addClassValue(textDiv2, "textOverlay2");
       textDiv.text(projects[i].name);
-      textDiv1.append("<button type='button' class='btn btn-outline-light'> Learn More! </button>");
+      textDiv1.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal' 
+      data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
       textDiv1.prepend("<hr style='border-top: 3px solid white'/>");
       textDiv2.append('<i class="fas fa-project-diagram"></i>');
       appendElement(textDiv, "<hr style='border-top: 3px solid white'/>");
@@ -182,5 +184,32 @@ $(document).ready(function () {
       $(this).addClass("active");
       $(this).parent().siblings().children().removeClass("active");
     }
-  })
+  });
+
+  // Generate modal
+  $(".learnMore").on("click", function (event) {
+    event.preventDefault();
+    console.log("Inside learn more button click funtion");
+    var id = $(this).data("id");
+    var name;
+    var desc;
+    var link;
+    var repoLink;
+    console.log(id);
+    for (var i = 0; i < projects.length; i++) {
+      if (id === projects[i].id) {
+        name = projects[i].name;
+        desc = projects[i].desc;
+        link = projects[i].link;
+        repoLink = projects[i].repoLink;
+      }
+    }
+    console.log(name);
+    $("#modalHeader").text(name);
+    $("#modalBody").text(desc);
+    $("#link").empty();
+    $("#link").append("<a href=" + link + " " + "target=_blank>Deployed Link<a/>&nbsp&nbsp&nbsp");
+    $("#link").append("<a href=" + repoLink + " " + "target=_blank>Repository<a/>");
+    $("#modal").show();
+  });
 })
