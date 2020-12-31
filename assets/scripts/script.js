@@ -93,9 +93,9 @@ $(document).ready(function () {
     }
     $("#projects").append(rowDiv);
   }
-console.log(workExperience);
+  console.log(workExperience);
   // Hook work experience to dom
-  for(var i=0; i<workExperience.length; i++) {
+  for (var i = 0; i < workExperience.length; i++) {
     var rowDiv = $("<div>");
     addClassValue(rowDiv, "row");
     var col1Div = $("<div>");
@@ -109,7 +109,7 @@ console.log(workExperience);
     var verticalDiv = $("<div>");
     addClassValue(verticalDiv, "bulletVl");
     var ulTag = $("<ul>");
-    for(var j=0; j<workExperience[i].responsibilities.length; j++) {
+    for (var j = 0; j < workExperience[i].responsibilities.length; j++) {
       ulTag.append("<li>" + workExperience[i].responsibilities[j] + "</li>");
     }
     appendElement(col2Div, "<i class='fas fa-dot-circle'></i>");
@@ -140,4 +140,26 @@ console.log(workExperience);
   function addClassValue(element, value) {
     element.addClass(value);
   }
+
+  // active class
+  $(".navbtn").on("click", function () {
+    var target = $(this).data("nav");
+
+    if (target === "home") {
+      $(this).addClass("active");
+      $(this).parent().siblings().children().removeClass("active");
+    } else if (target === "work") {
+      $(this).addClass("active");
+      $(this).parent().siblings().children().removeClass("active");
+    } else if (target === "about") {
+      $(this).addClass("active");
+      $(this).parent().siblings().children().removeClass("active");
+    } else if (target === "projects") {
+      $(this).addClass("active");
+      $(this).parent().siblings().children().removeClass("active");
+    } else if (target === "contact") {
+      $(this).addClass("active");
+      $(this).parent().siblings().children().removeClass("active");
+    }
+  })
 })

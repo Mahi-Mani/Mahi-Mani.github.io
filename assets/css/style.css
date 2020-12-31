@@ -12,6 +12,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.navfont {
+  font-family: 'Unica One', cursive;
+  font-size: 3ch;
+}
 .portfolio,
 .contact {
   color: white;
@@ -69,12 +73,17 @@
 .scroll > a {
   color: white !important;
 }
+.active {
+  color:red !important;
+}
 .card-text {
   color: #21618c;
 }
 .content {
+  font-family: 'Merienda', cursive;
+  font-size: 5ch;
   text-align: center;
-  margin-top: 25%;
+  margin-top: 20%;
 }
 .scroll {
   margin-top: 25%;
