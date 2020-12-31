@@ -86,7 +86,8 @@
   margin-top: 20%;
 }
 .scroll {
-  margin-top: 25%;
+  margin-top: 125px;
+  /* margin-bottom: 0; */
   text-align: center;
 }
 /* header{
