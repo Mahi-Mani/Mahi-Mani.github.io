@@ -302,6 +302,7 @@ margin: auto;
     }
     .image {
       width: 100%;
+      object-fit: cover;
     }
     /* #contactContent {
       text-align: center;
@@ -315,6 +316,7 @@ margin: auto;
     }
     .image {
       width: 100%;
+      object-fit: cover;
     }
     #contactContent {
       text-align: center;
@@ -329,6 +331,7 @@ margin: auto;
     }
     .image {
       width: 100%;
+      object-fit: cover;
     }
     #contactContent {
       text-align: center;
@@ -366,6 +369,7 @@ margin: auto;
     }
     .image {
       width: 100%;
+      object-fit: cover;
     }
 }
 
@@ -375,6 +379,7 @@ margin: auto;
   } */
   .image {
     width: 100%;
+    object-fit: cover;
   }
   #projects,
   #workExperience {
