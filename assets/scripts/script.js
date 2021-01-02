@@ -48,9 +48,9 @@ $(document).ready(function () {
       var rowDiv = $("<div>");
       addClassValue(rowDiv, "row");
       var col1Div = $("<div>");
-      addClassValue(col1Div, "col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
+      addClassValue(col1Div, "col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
       var col2Div = $("<div>");
-      addClassValue(col2Div, "col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
+      addClassValue(col2Div, "col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
       addAttribute(col2Div, "data-aos", "flip-up");
       addAttribute(col2Div, "data-aos-duration", "1000");
       var wrapper = $("<div>");
@@ -85,11 +85,11 @@ $(document).ready(function () {
       appendElement(rowDiv, col2Div);
     } else {
       var col3Div = $("<div>");
-      col3Div.addClass("col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
+      col3Div.addClass("col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
       addAttribute(col3Div, "data-aos", "flip-up");
       addAttribute(col3Div, "data-aos-duration", "1000");
       var col4Div = $("<div>");
-      col4Div.addClass("col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
+      col4Div.addClass("col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
       var wrapper = $("<div>");
       addClassValue(wrapper, "wrapper");
       var img2Tag = $("<img>");
@@ -132,13 +132,13 @@ $(document).ready(function () {
     addAttribute(rowDiv, "data-aos", "fade-up");
     addAttribute(rowDiv, "data-aos-duration", "1000");
     var col1Div = $("<div>");
-    addClassValue(col1Div, "col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2");
+    addClassValue(col1Div, "col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2");
     var col2Div = $("<div>");
-    addClassValue(col2Div, "col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
+    addClassValue(col2Div, "col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
     var col3Div = $("<div>");
-    addClassValue(col3Div, "col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7");
+    addClassValue(col3Div, "col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7");
     var col4Div = $("<div>");
-    addClassValue(col4Div, "col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2");
+    addClassValue(col4Div, "col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2");
     var verticalDiv = $("<div>");
     addClassValue(verticalDiv, "bulletVl");
     var ulTag = $("<ul>");

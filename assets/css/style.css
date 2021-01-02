@@ -287,18 +287,20 @@ margin: auto;
 
 /* Media queries */
 @media only screen and (min-width: 320px) {
-  #projects {
+  #projects,
+  #workExperience {
     background-image: none;
-    background-color: violet;
+    background-color: yellow;
     }
     .image {
       width: 100%;
     }
 }
 @media only screen and (min-width: 414px) {
-  #projects {
+  #projects,
+  #workExperience {
     background-image: none;
-    background-color: violet;
+    background-color: blue;
     }
     .image {
       width: 100%;
@@ -306,7 +308,8 @@ margin: auto;
 }
 
 @media only screen and (min-width: 576px) {
-  #projects {
+  #projects,
+  #workExperience {
     background-image: none;
     background-color: violet;
     }
@@ -331,14 +334,16 @@ margin: auto;
   .image {
     width: 100%;
   }
-  #projects {
+  #projects,
+  #workExperience {
   background-image: none;
   background-color: green;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  #projects {
+  #projects,
+  #workExperience {
     background-image: none;
     background-color: black;
     }
@@ -354,7 +359,8 @@ margin: auto;
   .image {
     width: 100%;
   }
-  #projects {
+  #projects,
+  #workExperience {
     background-image: none;
     background-color: red;
     }
