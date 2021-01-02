@@ -308,6 +308,13 @@ margin: auto;
     /* #contactContent {
       text-align: center;
     } */
+    .modal {
+      margin: 0 auto;
+    }
+    .modal-dialog {
+      max-width: 30%;
+      max-height: 40%;
+    }
     .textOverlay {
       color: white !important;
       font-size: 15px;
@@ -354,6 +361,13 @@ margin: auto;
     }
     #contactContent {
       text-align: center;
+    }
+    .modal {
+      margin: 0 auto;
+    }
+    .modal-dialog {
+      max-width: 30%;
+      max-height: 40%;
     }
     .textOverlay {
       color: white !important;
@@ -403,6 +417,13 @@ margin: auto;
     #contactContent {
       text-align: center;
     }
+    .modal {
+      margin: 0 auto;
+    }
+    .modal-dialog {
+      max-width: 30%;
+      max-height: 40%;
+    }
     .textOverlay {
       color: white !important;
       font-size: 15px;
@@ -451,6 +472,13 @@ margin: auto;
   /* .image {
     width: 570px;
   } */
+  .modal {
+    margin: 0 auto;
+  }
+  .modal-dialog {
+    max-width: 30%;
+    max-height: 40%;
+  }
   .textOverlay {
     color: white !important;
     font-size: 15px;
@@ -504,6 +532,13 @@ margin: auto;
       width: 100%;
       object-fit: cover;
     }
+    .modal {
+      margin: 0 auto;
+    }
+    .modal-dialog {
+      max-width: 30%;
+      max-height: 40%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -518,6 +553,13 @@ margin: auto;
   #workExperience {
     background-image: none;
     background-color: red;
+    }
+    .modal {
+      margin: 0 auto;
+    }
+    .modal-dialog {
+      max-width: 30%;
+      max-height: 40%;
     }
 }
 
