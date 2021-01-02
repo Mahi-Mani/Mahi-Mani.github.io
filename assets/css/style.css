@@ -1,20 +1,24 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 #home,
 #projects,
 #contact {
   background-color: teal;
-  /* background-image: url("../images/blue-background.jpg");
+  /* background-image: url("../images/blue-background.jpg"); */
   padding-top: 50px;
   width: 100%;
   height: 100%;
   padding-bottom: 10%;
-  parallax scrolling effect
+  /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 /* #home {
-  border: 2px solid red;
+  width: 100%;
 } */
 .navfont {
   font-family: 'Unica One', cursive;
@@ -111,9 +115,9 @@
 }
 .headerContent {
   font-family: 'Merienda', cursive;
-  /* font-size: 44px; */
+  font-size: 44px;
   text-align: center;
-  /* margin-top: 20%; */
+  margin-top: 20%;
 }
 .scroll {
   margin-top: 125px;
