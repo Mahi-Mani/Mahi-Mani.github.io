@@ -38,7 +38,7 @@ html, body {
   text-align: center;
 }
 .wrapper {
-  position: relative;
+  /* position: relative; */
   /* width: 50%; */
 }
 .wrapper:hover .image {
@@ -46,6 +46,7 @@ html, body {
 }
 
 .image {
+  position: relative;
   /* display: block; */
   /* width: 100%;
   height: auto; */
@@ -307,6 +308,39 @@ margin: auto;
     /* #contactContent {
       text-align: center;
     } */
+    .textOverlay {
+      color: white !important;
+      font-size: 15px;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .textOverlay1 {
+      color: white !important;
+      font-size: 15px;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .textOverlay2 {
+      color: white !important;
+      font-size: 15px;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
 }
 @media only screen and (min-width: 414px) {
   #projects,
@@ -319,6 +353,39 @@ margin: auto;
       object-fit: cover;
     }
     #contactContent {
+      text-align: center;
+    }
+    .textOverlay {
+      color: white !important;
+      font-size: 15px;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .textOverlay1 {
+      color: white !important;
+      font-size: 15px;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .textOverlay2 {
+      color: white !important;
+      font-size: 15px;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       text-align: center;
     }
 }
@@ -336,6 +403,39 @@ margin: auto;
     #contactContent {
       text-align: center;
     }
+    .textOverlay {
+      color: white !important;
+      font-size: 15px;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .textOverlay1 {
+      color: white !important;
+      font-size: 15px;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .textOverlay2 {
+      color: white !important;
+      font-size: 15px;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -351,6 +451,39 @@ margin: auto;
   /* .image {
     width: 570px;
   } */
+  .textOverlay {
+    color: white !important;
+    font-size: 15px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .textOverlay1 {
+    color: white !important;
+    font-size: 15px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .textOverlay2 {
+    color: white !important;
+    font-size: 15px;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
   .image {
     width: 100%;
   }
