@@ -51,6 +51,8 @@ $(document).ready(function () {
       addClassValue(col1Div, "col-md-1 col-lg-1");
       var col2Div = $("<div>");
       addClassValue(col2Div, "col-md-5 col-lg-5");
+      addAttribute(col2Div, "data-aos", "flip-up");
+      addAttribute(col2Div, "data-aos-duration", "1000");
       var wrapper = $("<div>");
       addClassValue(wrapper, "wrapper");
       var img1Tag = $("<img>");
@@ -83,6 +85,8 @@ $(document).ready(function () {
     } else {
       var col3Div = $("<div>");
       col3Div.addClass("col-md-5 col-lg-5");
+      addAttribute(col3Div, "data-aos", "flip-up");
+      addAttribute(col3Div, "data-aos-duration", "1000");
       var col4Div = $("<div>");
       col4Div.addClass("col-md-1 col-lg-1");
       var wrapper = $("<div>");
@@ -123,6 +127,8 @@ $(document).ready(function () {
   for (var i = 0; i < workExperience.length; i++) {
     var rowDiv = $("<div>");
     addClassValue(rowDiv, "row");
+    addAttribute(rowDiv, "data-aos", "fade-up");
+    addAttribute(rowDiv, "data-aos-duration", "1000");
     var col1Div = $("<div>");
     addClassValue(col1Div, "col-md-2 col-lg-2");
     var col2Div = $("<div>");
