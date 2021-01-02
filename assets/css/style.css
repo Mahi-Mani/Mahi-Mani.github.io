@@ -24,10 +24,13 @@ html, body {
   font-family: 'Unica One', cursive;
   font-size: 3ch;
 }
-.navbar-toggler {
+/* .navbar-toggler {
   border-color: red;
   background-color: black;
-} 
+}  */
+.fa-bars {
+  color: red;
+}
 .portfolio,
 .contact {
   color: white;
@@ -296,6 +299,10 @@ margin: auto;
 
 /* Media queries */
 @media only screen and (min-width: 320px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   #projects,
   #workExperience {
     background-image: none;
@@ -350,6 +357,10 @@ margin: auto;
     }
 }
 @media only screen and (min-width: 414px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   #projects,
   #workExperience {
     background-image: none;
@@ -405,6 +416,10 @@ margin: auto;
 }
 
 @media only screen and (min-width: 576px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   #projects,
   #workExperience {
     background-image: none;
@@ -460,6 +475,10 @@ margin: auto;
 }
 
 @media only screen and (min-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   /* .vl{
       display: none;
   }
@@ -523,6 +542,10 @@ margin: auto;
 }
 
 @media only screen and (min-width: 992px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   #projects,
   #workExperience {
     background-image: none;
@@ -539,9 +562,46 @@ margin: auto;
       max-width: 30%;
       max-height: 40%;
     }
+    .textOverlay {
+      color: white !important;
+      font-size: 20px;
+      position: absolute;
+      top: 10%;
+      left: 25%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .textOverlay1 {
+      color: white !important;
+      font-size: 20px;
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .textOverlay2 {
+      color: white !important;
+      font-size: 20px;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   /* .image {
     width: 643px;
   } */
@@ -560,6 +620,39 @@ margin: auto;
     .modal-dialog {
       max-width: 30%;
       max-height: 40%;
+    }
+    .textOverlay {
+      color: white !important;
+      font-size: 20px;
+      position: absolute;
+      top: 10%;
+      left: 25%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .textOverlay1 {
+      color: white !important;
+      font-size: 20px;
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .textOverlay2 {
+      color: white !important;
+      font-size: 20px;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
     }
 }
 
