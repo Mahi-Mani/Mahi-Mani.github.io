@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  // Initialize AOS
+  AOS.init();
 
   // Variable Declarations
   var isExpandedAbt;
