@@ -1,17 +1,21 @@
 #home,
 #projects,
 #contact {
-  background-image: url("../images/blue-background.jpg");
+  background-color: teal;
+  /* background-image: url("../images/blue-background.jpg");
   padding-top: 50px;
   width: 100%;
   height: 100%;
   padding-bottom: 10%;
-  /* parallax scrolling effect */
+  parallax scrolling effect
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
+/* #home {
+  border: 2px solid red;
+} */
 .navfont {
   font-family: 'Unica One', cursive;
   font-size: 3ch;
@@ -94,7 +98,7 @@
   text-align: center;
 }
 .nav-link, 
-.container,
+.headerContent,
 #about,
 .scroll > a {
   color: white !important;
@@ -105,11 +109,11 @@
 .card-text {
   color: #21618c;
 }
-.content {
+.headerContent {
   font-family: 'Merienda', cursive;
-  font-size: 5ch;
+  /* font-size: 44px; */
   text-align: center;
-  margin-top: 20%;
+  /* margin-top: 20%; */
 }
 .scroll {
   margin-top: 125px;
@@ -295,6 +299,9 @@ margin: auto;
     .image {
       width: 100%;
     }
+    /* #contactContent {
+      text-align: center;
+    } */
 }
 @media only screen and (min-width: 414px) {
   #projects,
@@ -304,6 +311,9 @@ margin: auto;
     }
     .image {
       width: 100%;
+    }
+    #contactContent {
+      text-align: center;
     }
 }
 
@@ -315,6 +325,9 @@ margin: auto;
     }
     .image {
       width: 100%;
+    }
+    #contactContent {
+      text-align: center;
     }
 }
 
