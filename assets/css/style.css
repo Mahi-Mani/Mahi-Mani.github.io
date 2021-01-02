@@ -336,7 +336,7 @@ margin: auto;
 }
 
 @media only screen and (min-width: 768px) {
-  .vl{
+  /* .vl{
       display: none;
   }
   .col1{
@@ -344,7 +344,7 @@ margin: auto;
   }
   .col2{
       width: 768px;
-  }
+  } */
   /* .image {
     width: 570px;
   } */
