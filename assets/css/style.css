@@ -314,11 +314,8 @@ margin: auto;
     }
     .image {
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
-    /* #contactContent {
-      text-align: center;
-    } */
     .modal {
       margin: 0 auto;
     }
@@ -372,7 +369,7 @@ margin: auto;
     }
     .image {
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
     #contactContent {
       text-align: center;
@@ -431,7 +428,7 @@ margin: auto;
     }
     .image {
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
     #contactContent {
       text-align: center;
@@ -483,18 +480,6 @@ margin: auto;
     max-width: 100%;
     overflow-x: hidden;
   }
-  /* .vl{
-      display: none;
-  }
-  .col1{
-      width: 768px;
-  }
-  .col2{
-      width: 768px;
-  } */
-  /* .image {
-    width: 570px;
-  } */
   .modal {
     margin: 0 auto;
   }
@@ -537,6 +522,7 @@ margin: auto;
   }
   .image {
     width: 100%;
+    object-fit: contain;
   }
   #projects,
   #workExperience {
@@ -557,7 +543,7 @@ margin: auto;
     }
     .image {
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
     .modal {
       margin: 0 auto;
@@ -611,7 +597,7 @@ margin: auto;
   } */
   .image {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   #projects,
   #workExperience {

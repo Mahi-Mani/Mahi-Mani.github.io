@@ -5,6 +5,13 @@ $(document).ready(function () {
   // Variable Declarations
   var isExpandedAbt;
   var isExpandedContact;
+  var width;
+  var height;
+
+  $(window).resize(function () {
+    console.log(wrapper.width());
+    width = wrapper.width();
+  });
 
   // +++++++++++++++++
   //   $(document).on("scroll", onScroll);
@@ -56,6 +63,8 @@ $(document).ready(function () {
   //   return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
   // }
   // +++++++++++++++++++++++++++++++++++++++++++
+
+
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > 750) {
@@ -182,6 +191,7 @@ $(document).ready(function () {
 
   // Hook projects dom
   for (var i = 0; i < projects.length; i++) {
+    height = Math.floor(width / projects[i].ratio);
     if (i % 2 === 0) {
       var rowDiv = $("<div>");
       addClassValue(rowDiv, "row");
@@ -196,8 +206,8 @@ $(document).ready(function () {
       var img1Tag = $("<img>");
       addAttribute(img1Tag, "src", projects[i].image);
       // addAttribute(img1Tag, "width", "570px");
-      // addAttribute(img1Tag, "width", "643px");
-      addAttribute(img1Tag, "height", "460px");
+      addAttribute(img1Tag, "width", width);
+      addAttribute(img1Tag, "height", height);
       addClassValue(img1Tag, "image");
       var overlayDiv = $("<div>");
       addClassValue(overlayDiv, "overlay");
@@ -234,7 +244,8 @@ $(document).ready(function () {
       addAttribute(img2Tag, "src", projects[i].image);
       // addAttribute(img2Tag, "width", "570px");
       // addAttribute(img2Tag, "width", "643px");
-      addAttribute(img2Tag, "height", "460px");
+      addAttribute(img2Tag, "width", width);
+      addAttribute(img2Tag, "height", height);
       addClassValue(img2Tag, "image");
       var overlayDiv = $("<div>");
       addClassValue(overlayDiv, "overlay");
