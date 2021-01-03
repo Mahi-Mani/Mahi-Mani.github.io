@@ -4,7 +4,7 @@ box-sizing: border-box;
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-  background-color: brown;
+  /* background-color: brown; */
 }
 #home,
 #projects,
@@ -307,11 +307,11 @@ margin: auto;
     max-width: 100%;
     overflow-x: hidden;
   }
-  #projects,
+  /* #projects,
   #workExperience {
     background-image: none;
     background-color: yellow;
-    }
+    } */
     .image {
       width: 100%;
       object-fit: contain;
@@ -362,11 +362,11 @@ margin: auto;
     max-width: 100%;
     overflow-x: hidden;
   }
-  #projects,
+  /* #projects,
   #workExperience {
     background-image: none;
     background-color: blue;
-    }
+    } */
     .image {
       width: 100%;
       object-fit: contain;
@@ -425,11 +425,11 @@ margin: auto;
     max-width: 100%;
     overflow-x: hidden;
   }
-  #projects,
+  /* #projects,
   #workExperience {
     background-image: none;
     background-color: violet;
-    }
+    } */
     .image {
       width: 100%;
       object-fit: contain;
@@ -530,11 +530,11 @@ margin: auto;
     width: 100%;
     object-fit: contain;
   }
-  #projects,
+  /* #projects,
   #workExperience {
   background-image: none;
   background-color: green;
-  }
+  } */
 }
 
 @media only screen and (min-width: 992px) {
@@ -542,11 +542,11 @@ margin: auto;
     max-width: 100%;
     overflow-x: hidden;
   }
-  #projects,
+  /* #projects,
   #workExperience {
     background-image: none;
     background-color: black;
-    }
+    } */
     .image {
       width: 100%;
       object-fit: contain;
@@ -605,11 +605,11 @@ margin: auto;
     width: 100%;
     object-fit: contain;
   }
-  #projects,
+  /* #projects,
   #workExperience {
     background-image: none;
     background-color: red;
-    }
+    } */
     .modal {
       margin: 0 auto;
     }
