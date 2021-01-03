@@ -80,7 +80,7 @@ html, body {
   color: white !important;
   font-size: 20px;
   position: absolute;
-  top: 10%;
+  top: 2%;
   left: 25%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -91,7 +91,7 @@ html, body {
   color: white !important;
   font-size: 20px;
   position: absolute;
-  bottom: 10%;
+  bottom: 2%;
   right: 25%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -383,21 +383,25 @@ margin: auto;
     }
     .textOverlay {
       color: white !important;
-      font-size: 15px;
+      font-size: 12px;
       position: absolute;
-      top: 10%;
+      margin-top: 2%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
     }
+    .learnMore {
+      font-size: 12px;
+    }
     .textOverlay1 {
       color: white !important;
       font-size: 15px;
       position: absolute;
-      bottom: 5%;
+      margin-bottom: 2%;
       left: 50%;
+      width: fit-content;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
@@ -444,7 +448,7 @@ margin: auto;
       color: white !important;
       font-size: 15px;
       position: absolute;
-      top: 10%;
+      margin-top: 2%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -455,7 +459,8 @@ margin: auto;
       color: white !important;
       font-size: 15px;
       position: absolute;
-      bottom: 5%;
+      width: fit-content;
+      margin-bottom: 2%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -491,7 +496,7 @@ margin: auto;
     color: white !important;
     font-size: 15px;
     position: absolute;
-    top: 10%;
+    margin-top: 5%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -501,8 +506,9 @@ margin: auto;
   .textOverlay1 {
     color: white !important;
     font-size: 15px;
+    width: fit-content;
     position: absolute;
-    bottom: 5%;
+    margin-bottom: 5%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
