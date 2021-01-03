@@ -369,6 +369,8 @@ $(document).ready(function () {
     $("#link").empty();
     $("#link").append("<a href=" + link + " " + "target=_blank>Deployed Link<a/>&nbsp&nbsp&nbsp");
     $("#link").append("<a href=" + repoLink + " " + "target=_blank>Repository<a/>");
+    $(".modal-dialog").attr("width", width);
+    $(".modal-dialog").attr("height", height);
     $("#modal").show();
   });
 })

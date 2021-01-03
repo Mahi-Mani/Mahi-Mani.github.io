@@ -319,10 +319,10 @@ margin: auto;
     .modal {
       margin: 0 auto;
     }
-    .modal-dialog {
+    /* .modal-dialog {
       max-width: 30%;
       max-height: 40%;
-    }
+    } */
     .textOverlay {
       color: white !important;
       font-size: 15px;
@@ -377,10 +377,10 @@ margin: auto;
     .modal {
       margin: 0 auto;
     }
-    .modal-dialog {
+    /* .modal-dialog {
       max-width: 30%;
       max-height: 40%;
-    }
+    } */
     .textOverlay {
       color: white !important;
       font-size: 12px;
@@ -440,10 +440,10 @@ margin: auto;
     .modal {
       margin: 0 auto;
     }
-    .modal-dialog {
+    /* .modal-dialog {
       max-width: 30%;
       max-height: 40%;
-    }
+    } */
     .textOverlay {
       color: white !important;
       font-size: 15px;
@@ -488,10 +488,10 @@ margin: auto;
   .modal {
     margin: 0 auto;
   }
-  .modal-dialog {
+  /* .modal-dialog {
     max-width: 30%;
     max-height: 40%;
-  }
+  } */
   .textOverlay {
     color: white !important;
     font-size: 15px;
@@ -554,10 +554,10 @@ margin: auto;
     .modal {
       margin: 0 auto;
     }
-    .modal-dialog {
+    /* .modal-dialog {
       max-width: 30%;
       max-height: 40%;
-    }
+    } */
     .textOverlay {
       color: white !important;
       font-size: 20px;
@@ -613,10 +613,10 @@ margin: auto;
     .modal {
       margin: 0 auto;
     }
-    .modal-dialog {
+    /* .modal-dialog {
       max-width: 30%;
       max-height: 40%;
-    }
+    } */
     .textOverlay {
       color: white !important;
       font-size: 20px;
