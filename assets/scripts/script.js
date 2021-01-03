@@ -213,19 +213,21 @@ $(document).ready(function () {
       addClassValue(overlayDiv, "overlay");
       var textDiv = $("<div>");
       addClassValue(textDiv, "textOverlay");
-      var textDiv1 = $("<div>");
-      addClassValue(textDiv1, "textOverlay1");
-      var textDiv2 = $("<div>");
-      addClassValue(textDiv2, "textOverlay2");
+      // var textDiv1 = $("<div>");
+      // addClassValue(textDiv1, "textOverlay");
+      // var textDiv2 = $("<div>");
+      // addClassValue(textDiv2, "textOverlay2");
       textDiv.text(projects[i].name);
-      textDiv1.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal'
-       data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
-      textDiv1.prepend("<hr style='border-top: 3px solid white'/>");
-      textDiv2.append('<i class="fas fa-project-diagram"></i>');
+      // textDiv.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal'
+      //  data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
+      // textDiv1.prepend("<hr style='border-top: 3px solid white'/>");
+      // textDiv2.append('<i class="fas fa-project-diagram"></i>');
       appendElement(textDiv, "<hr style='border-top: 3px solid white'/>");
+      textDiv.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal'
+       data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
       appendElement(overlayDiv, textDiv);
-      appendElement(overlayDiv, textDiv1);
-      appendElement(overlayDiv, textDiv2);
+      // appendElement(overlayDiv, textDiv1);
+      // appendElement(overlayDiv, textDiv2);
       appendElement(wrapper, img1Tag);
       appendElement(wrapper, overlayDiv);
       appendElement(col2Div, wrapper);
@@ -252,19 +254,21 @@ $(document).ready(function () {
       var textDiv = $("<div>");
       addClassValue(textDiv, "textOverlay");
       textDiv.text(projects[i].name);
-      var textDiv1 = $("<div>");
-      addClassValue(textDiv1, "textOverlay1");
-      var textDiv2 = $("<div>");
-      addClassValue(textDiv2, "textOverlay2");
+      // var textDiv1 = $("<div>");
+      // addClassValue(textDiv1, "textOverlay");
+      // var textDiv2 = $("<div>");
+      // addClassValue(textDiv2, "textOverlay2");
       textDiv.text(projects[i].name);
-      textDiv1.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal' 
-      data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
-      textDiv1.prepend("<hr style='border-top: 3px solid white'/>");
-      textDiv2.append('<i class="fas fa-project-diagram"></i>');
+      // textDiv1.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal' 
+      // data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
+      // textDiv1.prepend("<hr style='border-top: 3px solid white'/>");
+      // textDiv2.append('<i class="fas fa-project-diagram"></i>');
       appendElement(textDiv, "<hr style='border-top: 3px solid white'/>");
+      textDiv.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal' 
+      data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
       appendElement(overlayDiv, textDiv);
-      appendElement(overlayDiv, textDiv1);
-      appendElement(overlayDiv, textDiv2);
+      // appendElement(overlayDiv, textDiv1);
+      // appendElement(overlayDiv, textDiv2);
       appendElement(wrapper, img2Tag);
       appendElement(wrapper, overlayDiv);
       appendElement(col3Div, wrapper);

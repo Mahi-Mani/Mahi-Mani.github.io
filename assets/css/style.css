@@ -327,25 +327,27 @@ margin: auto;
       color: white !important;
       font-size: 15px;
       position: absolute;
-      top: 10%;
+      margin-top: 50%;
       left: 50%;
+      /* margin: 0 auto; */
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
     }
-    .textOverlay1 {
+    /* .textOverlay1 {
       color: white !important;
       font-size: 15px;
       position: absolute;
-      bottom: 5%;
+      margin-bottom: 50%;
       left: 50%;
+      margin: 0 auto;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-    }
-    .textOverlay2 {
+    } */
+    /* .textOverlay2 {
       color: white !important;
       font-size: 15px;
       position: absolute;
@@ -355,7 +357,7 @@ margin: auto;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-    }
+    } */
 }
 @media only screen and (min-width: 414px) {
   html, body {
@@ -385,7 +387,7 @@ margin: auto;
       color: white !important;
       font-size: 12px;
       position: absolute;
-      margin-top: 2%;
+      margin-top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -395,19 +397,19 @@ margin: auto;
     .learnMore {
       font-size: 12px;
     }
-    .textOverlay1 {
+    /* .textOverlay1 {
       color: white !important;
       font-size: 15px;
       position: absolute;
-      margin-bottom: 2%;
+      margin-bottom: 50%;
       left: 50%;
       width: fit-content;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-    }
-    .textOverlay2 {
+    } */
+    /* .textOverlay2 {
       color: white !important;
       font-size: 15px;
       position: absolute;
@@ -417,7 +419,7 @@ margin: auto;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-    }
+    } */
 }
 
 @media only screen and (min-width: 576px) {
@@ -448,26 +450,26 @@ margin: auto;
       color: white !important;
       font-size: 15px;
       position: absolute;
-      margin-top: 2%;
+      margin-top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
     }
-    .textOverlay1 {
+    /* .textOverlay1 {
       color: white !important;
       font-size: 15px;
       position: absolute;
       width: fit-content;
-      margin-bottom: 2%;
+      margin-bottom: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-    }
-    .textOverlay2 {
+    } */
+    /* .textOverlay2 {
       color: white !important;
       font-size: 15px;
       position: absolute;
@@ -477,7 +479,7 @@ margin: auto;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-    }
+    } */
 }
 
 @media only screen and (min-width: 768px) {
@@ -496,26 +498,26 @@ margin: auto;
     color: white !important;
     font-size: 15px;
     position: absolute;
-    margin-top: 5%;
+    margin-top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  .textOverlay1 {
+  /* .textOverlay1 {
     color: white !important;
     font-size: 15px;
     width: fit-content;
     position: absolute;
-    margin-bottom: 5%;
+    margin-bottom: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  .textOverlay2 {
+  } */
+  /* .textOverlay2 {
     color: white !important;
     font-size: 15px;
     position: absolute;
@@ -525,7 +527,7 @@ margin: auto;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+  } */
   .image {
     width: 100%;
     object-fit: contain;
@@ -558,29 +560,29 @@ margin: auto;
       max-width: 30%;
       max-height: 40%;
     } */
+    /* .textOverlay1 {
+      color: white !important;
+      font-size: 20px;
+      position: absolute;
+      margin-top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    } */
     .textOverlay {
       color: white !important;
       font-size: 20px;
       position: absolute;
-      top: 10%;
-      left: 25%;
+      margin-top: 50%;
+      left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
     }
-    .textOverlay1 {
-      color: white !important;
-      font-size: 20px;
-      position: absolute;
-      bottom: 10%;
-      right: 10%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    .textOverlay2 {
+    /* .textOverlay2 {
       color: white !important;
       font-size: 20px;
       position: absolute;
@@ -590,7 +592,7 @@ margin: auto;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-    }
+    } */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -621,25 +623,25 @@ margin: auto;
       color: white !important;
       font-size: 20px;
       position: absolute;
-      top: 10%;
-      left: 25%;
+      margin-top: 50%;
+      left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
     }
-    .textOverlay1 {
+    /* .textOverlay1 {
       color: white !important;
       font-size: 20px;
       position: absolute;
-      bottom: 10%;
-      right: 10%;
+      margin-bottom: 50%;
+      left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-    }
-    .textOverlay2 {
+    } */
+    /* .textOverlay2 {
       color: white !important;
       font-size: 20px;
       position: absolute;
@@ -649,7 +651,7 @@ margin: auto;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-    }
+    } */
 }
 
 
