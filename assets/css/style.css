@@ -80,14 +80,14 @@ html, body {
   color: white !important;
   font-size: 20px;
   position: absolute;
-  top: 2%;
-  left: 25%;
+  margin-top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.textOverlay1 {
+/* .textOverlay1 {
   color: white !important;
   font-size: 20px;
   position: absolute;
@@ -97,8 +97,8 @@ html, body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
-.textOverlay2 {
+} */
+/* .textOverlay2 {
   color: white !important;
   font-size: 20px;
   position: absolute;
@@ -108,7 +108,7 @@ html, body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
+} */
 .nav-link, 
 .headerContent,
 #about,
@@ -325,11 +325,10 @@ margin: auto;
     } */
     .textOverlay {
       color: white !important;
-      font-size: 15px;
+      font-size: 12px;
       position: absolute;
       margin-top: 50%;
       left: 50%;
-      /* margin: 0 auto; */
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
@@ -448,7 +447,7 @@ margin: auto;
     } */
     .textOverlay {
       color: white !important;
-      font-size: 15px;
+      font-size: 12px;
       position: absolute;
       margin-top: 50%;
       left: 50%;
@@ -456,6 +455,9 @@ margin: auto;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
+    }
+    .learnMore {
+      font-size: 12px;
     }
     /* .textOverlay1 {
       color: white !important;
@@ -504,6 +506,9 @@ margin: auto;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+  .learnMore {
+    font-size: 15px;
   }
   /* .textOverlay1 {
     color: white !important;
@@ -582,6 +587,9 @@ margin: auto;
       transform: translate(-50%, -50%);
       text-align: center;
     }
+    .learnMore {
+      font-size: 20px;
+    }
     /* .textOverlay2 {
       color: white !important;
       font-size: 20px;
@@ -629,6 +637,9 @@ margin: auto;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
+    }
+    .learnMore {
+      font-size: 20px;
     }
     /* .textOverlay1 {
       color: white !important;

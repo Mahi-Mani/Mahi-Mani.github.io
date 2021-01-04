@@ -1,3 +1,7 @@
+$(window).on('load', function () {
+  AOS.refresh();
+});
+
 $(document).ready(function () {
   // Initialize AOS
   AOS.init();
@@ -222,11 +226,9 @@ $(document).ready(function () {
       addClassValue(wrapper, "wrapper");
       var img1Tag = $("<img>");
       addAttribute(img1Tag, "src", projects[i].image);
-      // addAttribute(img1Tag, "width", "570px");
       addAttribute(img1Tag, "width", width);
       addAttribute(img1Tag, "height", height);
       addClassValue(img1Tag, "image");
-      addAttribute(img1Tag, "data-toggle", "modal");
       var overlayDiv = $("<div>");
       addClassValue(overlayDiv, "overlay");
       addClassValue(overlayDiv, "learnMore");
@@ -248,8 +250,6 @@ $(document).ready(function () {
       textDiv.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal'
        data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
       appendElement(overlayDiv, textDiv);
-      // appendElement(overlayDiv, textDiv1);
-      // appendElement(overlayDiv, textDiv2);
       appendElement(wrapper, img1Tag);
       appendElement(wrapper, overlayDiv);
       appendElement(col2Div, wrapper);
@@ -266,9 +266,6 @@ $(document).ready(function () {
       addClassValue(wrapper, "wrapper");
       var img2Tag = $("<img>");
       addAttribute(img2Tag, "src", projects[i].image);
-      addAttribute(img2Tag, "data-toggle", "modal");
-      // addAttribute(img2Tag, "width", "570px");
-      // addAttribute(img2Tag, "width", "643px");
       addAttribute(img2Tag, "width", width);
       addAttribute(img2Tag, "height", height);
       addClassValue(img2Tag, "image");
@@ -294,8 +291,6 @@ $(document).ready(function () {
       textDiv.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal' 
       data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
       appendElement(overlayDiv, textDiv);
-      // appendElement(overlayDiv, textDiv1);
-      // appendElement(overlayDiv, textDiv2);
       appendElement(wrapper, img2Tag);
       appendElement(wrapper, overlayDiv);
       appendElement(col3Div, wrapper);
