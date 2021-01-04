@@ -169,6 +169,7 @@ $(document).ready(function () {
   // On click of skills button
   $("#learnOne").on("click", function (event) {
     isExpandedAbt = $("#learnOne").attr("aria-expanded");
+    console.log("I am clicked");
     updateClass();
   })
   // On click of contact me button
@@ -180,8 +181,8 @@ $(document).ready(function () {
   function updateClass() {
 
     console.log("clciked");
-    $("#learnOne").empty();
-    $("#learnTwo").empty();
+    $("#learnOne").children().empty();
+    $("#learnTwo").children().empty();
     $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-down"></i></h5>');
     $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-down"></i></h5>');
 
@@ -189,23 +190,23 @@ $(document).ready(function () {
       $(".col1").addClass("col animated rotateIn");
       $(".col2").addClass("col animated rotateIn");
       console.log("Skilla and education");
-      $("#learnOne").empty();
+      $("#learnOne").children().empty();
       $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-up"></i></h5>');
-      $("#learnTwo").empty();
+      $("#learnTwo").children().empty();
       $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-up"></i></h5>');
     }
     else if ((isExpandedAbt === "false") && ((isExpandedContact === "true") || isExpandedContact === undefined)) {
       $(".col1").addClass("col animated rotateIn");
       $(".col2").removeClass("col animated rotateIn");
       console.log("Skills");
-      $("#learnOne").empty();
+      $("#learnOne").children().empty();
       $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-up"></i></h5>');
     }
     else if ((isExpandedContact === "false") && ((isExpandedAbt === "true") || isExpandedAbt === undefined)) {
       $(".col2").addClass("col animated rotateIn");
       $(".col1").removeClass("col animated rotateIn");
       console.log("Education");
-      $("#learnTwo").empty();
+      $("#learnTwo").children().empty();
       $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-up"></i></h5>');
     }
   }
