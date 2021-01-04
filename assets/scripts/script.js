@@ -209,8 +209,13 @@ $(document).ready(function () {
       addAttribute(img1Tag, "width", width);
       addAttribute(img1Tag, "height", height);
       addClassValue(img1Tag, "image");
+      addAttribute(img1Tag, "data-toggle", "modal");
       var overlayDiv = $("<div>");
       addClassValue(overlayDiv, "overlay");
+      addClassValue(overlayDiv, "learnMore");
+      addAttribute(overlayDiv, "data-toggle", "modal");
+      addAttribute(overlayDiv, "data-target", "#modal");
+      addAttribute(overlayDiv, "data-id", projects[i].id);
       var textDiv = $("<div>");
       addClassValue(textDiv, "textOverlay");
       // var textDiv1 = $("<div>");
@@ -244,6 +249,7 @@ $(document).ready(function () {
       addClassValue(wrapper, "wrapper");
       var img2Tag = $("<img>");
       addAttribute(img2Tag, "src", projects[i].image);
+      addAttribute(img2Tag, "data-toggle", "modal");
       // addAttribute(img2Tag, "width", "570px");
       // addAttribute(img2Tag, "width", "643px");
       addAttribute(img2Tag, "width", width);
@@ -251,6 +257,10 @@ $(document).ready(function () {
       addClassValue(img2Tag, "image");
       var overlayDiv = $("<div>");
       addClassValue(overlayDiv, "overlay");
+      addClassValue(overlayDiv, "learnMore");
+      addAttribute(overlayDiv, "data-toggle", "modal");
+      addAttribute(overlayDiv, "data-target", "#modal");
+      addAttribute(overlayDiv, "data-id", projects[i].id);
       var textDiv = $("<div>");
       addClassValue(textDiv, "textOverlay");
       textDiv.text(projects[i].name);
