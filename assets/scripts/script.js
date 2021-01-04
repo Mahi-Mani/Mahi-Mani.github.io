@@ -175,17 +175,34 @@ $(document).ready(function () {
   // Function that updates classes for collapsed elements
   function updateClass() {
 
+    console.log("clciked");
+    $("#learnOne").empty();
+    $("#learnTwo").empty();
+    $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-down"></i></h5>');
+    $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-down"></i></h5>');
+
     if ((isExpandedContact === "false") && (isExpandedAbt === "false")) {
       $(".col1").addClass("col animated rotateIn");
       $(".col2").addClass("col animated rotateIn");
+      console.log("Skilla and education");
+      $("#learnOne").empty();
+      $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-up"></i></h5>');
+      $("#learnTwo").empty();
+      $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-up"></i></h5>');
     }
     else if ((isExpandedAbt === "false") && ((isExpandedContact === "true") || isExpandedContact === undefined)) {
       $(".col1").addClass("col animated rotateIn");
       $(".col2").removeClass("col animated rotateIn");
+      console.log("Skills");
+      $("#learnOne").empty();
+      $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-up"></i></h5>');
     }
     else if ((isExpandedContact === "false") && ((isExpandedAbt === "true") || isExpandedAbt === undefined)) {
       $(".col2").addClass("col animated rotateIn");
       $(".col1").removeClass("col animated rotateIn");
+      console.log("Education");
+      $("#learnTwo").empty();
+      $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-up"></i></h5>');
     }
   }
 
