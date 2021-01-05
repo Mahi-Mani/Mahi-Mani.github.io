@@ -11,10 +11,14 @@ $(document).ready(function () {
   var isExpandedContact;
   var width;
   var height;
+  var projectsWidth;
+  var breakPoint;
 
   $(window).resize(function () {
     console.log(wrapper.width());
     width = wrapper.width();
+    projectsWidth = $("#projects").width();
+    console.log(projectsWidth);
   });
 
   // +++++++++++++++++
@@ -211,16 +215,24 @@ $(document).ready(function () {
     }
   }
 
+  if (projectsWidth < "576") {
+    breakPoint = 2;
+  } else {
+    breakPoint = 3;
+  }
   // Hook projects dom
   for (var i = 0; i < projects.length; i++) {
     height = Math.floor(width / projects[i].ratio);
-    if (i % 2 === 0) {
+    if (i % breakPoint === 0) {
       var rowDiv = $("<div>");
       addClassValue(rowDiv, "row");
       var col1Div = $("<div>");
       addClassValue(col1Div, "col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
       var col2Div = $("<div>");
-      addClassValue(col2Div, "col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
+      if (breakPoint === 3)
+        addClassValue(col2Div, "col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3");
+      else
+        addClassValue(col2Div, "col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
       addAttribute(col2Div, "data-aos", "flip-up");
       addAttribute(col2Div, "data-aos-duration", "1000");
       var wrapper = $("<div>");
@@ -258,11 +270,16 @@ $(document).ready(function () {
       appendElement(rowDiv, col2Div);
     } else {
       var col3Div = $("<div>");
-      col3Div.addClass("col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
+      if (breakPoint === 3)
+        col3Div.addClass("col-5 col-sm-3 col-md-3 col-lg-3 col-xl-3");
+      else
+        col3Div.addClass("col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
       addAttribute(col3Div, "data-aos", "flip-up");
       addAttribute(col3Div, "data-aos-duration", "1000");
-      var col4Div = $("<div>");
-      col4Div.addClass("col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
+      if (i % 3 === 1 && breakPoint === 3) {
+        var col4Div = $("<div>");
+        col4Div.addClass("col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
+      }
       var wrapper = $("<div>");
       addClassValue(wrapper, "wrapper");
       var img2Tag = $("<img>");
@@ -296,10 +313,12 @@ $(document).ready(function () {
       appendElement(wrapper, overlayDiv);
       appendElement(col3Div, wrapper);
       appendElement(rowDiv, col3Div);
-      appendElement(rowDiv, col4Div);
+      if (breakPoint === 3)
+        appendElement(rowDiv, col4Div);
     }
     $("#projects").append(rowDiv);
   }
+
   console.log(workExperience);
   // Hook work experience to dom
   for (var i = 0; i < workExperience.length; i++) {
