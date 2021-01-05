@@ -21,76 +21,16 @@ $(document).ready(function () {
     console.log(projectsWidth);
   });
 
-  // +++++++++++++++++
-  //   $(document).on("scroll", onScroll);
-
-  //   //smoothscroll
-  //   $('a[href^="#"]').on('click', function (e) {
-  //       e.preventDefault();
-  //       $(document).off("scroll");
-
-  //       $('a').each(function () {
-  //           $(this).removeClass('active');
-  //       })
-  //       $(this).addClass('active');
-
-  //       var target = this.hash,
-  //           menu = target;
-  //       $target = $(target);
-  //       $('html, body').stop().animate({
-  //           'scrollTop': $target.offset().top+2
-  //       }, 500, 'swing', function () {
-  //           window.location.hash = target;
-  //           $(document).on("scroll", onScroll);
-  //       });
-  //   });
-  // });
-
-  // // Use Your Class or ID For Selection 
-
-  // function onScroll(event){
-  //   var scrollPos = $(document).scrollTop();
-  //   $('#menu-center a').each(function () {
-  //       var currLink = $(this);
-  //       var refElement = $(currLink.attr("href"));
-  //       if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-  //           $('#menu-center ul li a').removeClass("active");
-  //           currLink.addClass("active");
-  //       }
-  //       else{
-  //           currLink.removeClass("active");
-  //       }
-  //   });
-  // }
-
-  // function isScrolledIntoView(elem) {
-  //   var docViewTop = $(window).scrollTop();
-  //   var docViewBottom = docViewTop + $(window).height();
-  //   var elemTop = $(elem).offset().top;
-  //   var elemBottom = elemTop + $(elem).height();
-  //   return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  // }
-  // +++++++++++++++++++++++++++++++++++++++++++
-
-
-
   $(window).scroll(function () {
     if ($(this).scrollTop() > 750) {
-      // $(".navbar").fadeIn(500);
       $(".navbar").addClass("bg-dark");
     } else {
-      // $(".navbar").fadeOut(500);
       $(".navbar").removeClass("bg-dark");
     }
-    // console.log(isScrolledIntoView($('#projects')));
-    // if (isScrolledIntoView($('#projects'))) {
-    //   alert("projetc");
-    // }
+
     if ($(this).scrollTop() >= $('#home').position().top) {
-      // console.log('I have been reached');
-      // $(".navbtn").addClass("active");
       var navBtn = document.getElementsByClassName("navbtn");
-      // console.log(navBtn);
+
       for (var i = 0; i < navBtn.length; i++) {
         if (navBtn[i].dataset.nav === "home") {
           $("#navHome").addClass("active");
@@ -102,10 +42,8 @@ $(document).ready(function () {
       }
     }
     if ($(this).scrollTop() >= $('#about').position().top) {
-      // console.log('I have been reached');
-      // $(".navbtn").addClass("active");
       var navBtn = document.getElementsByClassName("navbtn");
-      // console.log(navBtn);
+
       for (var i = 0; i < navBtn.length; i++) {
         if (navBtn[i].dataset.nav === "about") {
           $("#navAbout").addClass("active");
@@ -117,10 +55,8 @@ $(document).ready(function () {
       }
     }
     if ($(this).scrollTop() >= $('#projects').position().top) {
-      // console.log('I have been reached');
-      // $(".navbtn").addClass("active");
       var navBtn = document.getElementsByClassName("navbtn");
-      // console.log(navBtn);
+
       for (var i = 0; i < navBtn.length; i++) {
         if (navBtn[i].dataset.nav === "projects") {
           $("#navProjects").addClass("active");
@@ -132,10 +68,8 @@ $(document).ready(function () {
       }
     }
     if ($(this).scrollTop() >= $('#workExperience').position().top) {
-      // console.log('I have been reached');
-      // $(".navbtn").addClass("active");
       var navBtn = document.getElementsByClassName("navbtn");
-      // console.log(navBtn);
+
       for (var i = 0; i < navBtn.length; i++) {
         if (navBtn[i].dataset.nav === "work") {
           $("#navWork").addClass("active");
@@ -147,10 +81,8 @@ $(document).ready(function () {
       }
     }
     if ($(this).scrollTop() >= $('#contact').position().top) {
-      // console.log('I have been reached');
-      // $(".navbtn").addClass("active");
       var navBtn = document.getElementsByClassName("navbtn");
-      // console.log(navBtn);
+
       for (var i = 0; i < navBtn.length; i++) {
         if (navBtn[i].dataset.nav === "contact") {
           $("#navContact").addClass("active");
@@ -163,13 +95,6 @@ $(document).ready(function () {
     }
   });
 
-  // function isScrolledIntoView(elem) {
-  //   var docViewTop = $(window).scrollTop();
-  //   var docViewBottom = docViewTop + $(window).height();
-  //   var elemTop = $(elem).offset().top;
-  //   var elemBottom = elemTop + $(elem).height();
-  //   return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  // }
   // On click of skills button
   $("#learnOne").on("click", function (event) {
     isExpandedAbt = $("#learnOne").attr("aria-expanded");
@@ -250,15 +175,7 @@ $(document).ready(function () {
       addAttribute(overlayDiv, "data-id", projects[i].id);
       var textDiv = $("<div>");
       addClassValue(textDiv, "textOverlay");
-      // var textDiv1 = $("<div>");
-      // addClassValue(textDiv1, "textOverlay");
-      // var textDiv2 = $("<div>");
-      // addClassValue(textDiv2, "textOverlay2");
       textDiv.text(projects[i].name);
-      // textDiv.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal'
-      //  data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
-      // textDiv1.prepend("<hr style='border-top: 3px solid white'/>");
-      // textDiv2.append('<i class="fas fa-project-diagram"></i>');
       appendElement(textDiv, "<hr style='border-top: 3px solid white'/>");
       textDiv.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal'
        data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
@@ -296,15 +213,6 @@ $(document).ready(function () {
       var textDiv = $("<div>");
       addClassValue(textDiv, "textOverlay");
       textDiv.text(projects[i].name);
-      // var textDiv1 = $("<div>");
-      // addClassValue(textDiv1, "textOverlay");
-      // var textDiv2 = $("<div>");
-      // addClassValue(textDiv2, "textOverlay2");
-      textDiv.text(projects[i].name);
-      // textDiv1.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal' 
-      // data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
-      // textDiv1.prepend("<hr style='border-top: 3px solid white'/>");
-      // textDiv2.append('<i class="fas fa-project-diagram"></i>');
       appendElement(textDiv, "<hr style='border-top: 3px solid white'/>");
       textDiv.append(`<button type='button' class='btn btn-outline-light learnMore' data-toggle='modal' 
       data-target='#modal' data-id=${projects[i].id}> Learn More! </button>`);
