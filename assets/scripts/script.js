@@ -154,14 +154,14 @@ $(document).ready(function () {
       var rowDiv = $("<div>");
       addClassValue(rowDiv, "row");
       var col1Div = $("<div>");
-      addClassValue(col1Div, "col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
+      addClassValue(col1Div, "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4");
       // var col2Div = $("<div>");
       // if (i === 3)
         // addClassValue(col2Div, "col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3");
       // else
       //   addClassValue(col2Div, "col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
-      addAttribute(col2Div, "data-aos", "flip-up");
-      addAttribute(col2Div, "data-aos-duration", "1000");
+      addAttribute(col1Div, "data-aos", "flip-up");
+      addAttribute(col1Div, "data-aos-duration", "1000");
       var wrapper = $("<div>");
       addClassValue(wrapper, "wrapper");
       var img1Tag = $("<img>");
@@ -184,21 +184,21 @@ $(document).ready(function () {
       appendElement(overlayDiv, textDiv);
       appendElement(wrapper, img1Tag);
       appendElement(wrapper, overlayDiv);
-      appendElement(col2Div, wrapper);
+      appendElement(col1Div, wrapper);
       appendElement(rowDiv, col1Div);
-      appendElement(rowDiv, col2Div);
+      // appendElement(rowDiv, col2Div);
     } else {
       var col3Div = $("<div>");
       // if (i === 3)
-        col3Div.addClass("col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3");
+        col3Div.addClass("col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4");
       // else
       //   col3Div.addClass("col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
       addAttribute(col3Div, "data-aos", "flip-up");
       addAttribute(col3Div, "data-aos-duration", "1000");
-      if (i % 3 === 1) {
-        var col4Div = $("<div>");
-        col4Div.addClass("col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
-      }
+      // if (i % 3 === 1) {
+      //   var col4Div = $("<div>");
+      //   col4Div.addClass("col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1");
+      // }
       var wrapper = $("<div>");
       addClassValue(wrapper, "wrapper");
       var img2Tag = $("<img>");
@@ -226,7 +226,7 @@ $(document).ready(function () {
       // if (breakPoint === 3)
       //   appendElement(rowDiv, col4Div);
     }
-    $("#projects").append(rowDiv);
+    $("#projectSection").append(rowDiv);
   }
 
   console.log(workExperience);
