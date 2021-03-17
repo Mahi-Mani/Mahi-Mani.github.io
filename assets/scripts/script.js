@@ -113,26 +113,32 @@ $(document).ready(function () {
     $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-down"></i></h5>');
     $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-down"></i></h5>');
 
-    if ((isExpandedContact === "false") && (isExpandedAbt === "false")) {
-      $(".col1").addClass("col animated rotateIn");
-      $(".col2").addClass("col animated rotateIn");
-      console.log("Skilla and education");
-      $("#learnOne").children().empty();
-      $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-up"></i></h5>');
-      $("#learnTwo").children().empty();
-      $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-up"></i></h5>');
-    }
-    else if ((isExpandedAbt === "false") && ((isExpandedContact === "true") || isExpandedContact === undefined)) {
+    // if ((isExpandedContact === "false") && (isExpandedAbt === "false")) {
+    //   $(".col1").addClass("col animated rotateIn");
+    //   $(".col2").addClass("col animated rotateIn");
+    //   console.log("Skilla and education");
+    //   $("#learnOne").children().empty();
+    //   $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-up"></i></h5>');
+    //   $("#learnTwo").children().empty();
+    //   $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-up"></i></h5>');
+    // }
+    if ((isExpandedAbt === "false") && ((isExpandedContact === "true") || isExpandedContact === undefined)) {
+      $(".col1").show();
+      $(".col2").hide();
       $(".col1").addClass("col animated rotateIn");
       $(".col2").removeClass("col animated rotateIn");
       console.log("Skills");
+      isExpandedContact = "false";
       $("#learnOne").children().empty();
       $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-up"></i></h5>');
     }
     else if ((isExpandedContact === "false") && ((isExpandedAbt === "true") || isExpandedAbt === undefined)) {
+      $(".col1").hide();
+      $(".col2").show();
       $(".col2").addClass("col animated rotateIn");
       $(".col1").removeClass("col animated rotateIn");
       console.log("Education");
+      isExpandedAbt = "true";
       $("#learnTwo").children().empty();
       $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-up"></i></h5>');
     }
@@ -148,8 +154,8 @@ $(document).ready(function () {
     //   console.log("Inside else loop");
     //   breakPoint = 3;
     // }
-// console.log(breakPoint);
-// console.log(width)
+    // console.log(breakPoint);
+    // console.log(width)
     if (i % 3 === 0) {
       var rowDiv = $("<div>");
       addClassValue(rowDiv, "row");
@@ -157,7 +163,7 @@ $(document).ready(function () {
       addClassValue(col1Div, "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4");
       // var col2Div = $("<div>");
       // if (i === 3)
-        // addClassValue(col2Div, "col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3");
+      // addClassValue(col2Div, "col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3");
       // else
       //   addClassValue(col2Div, "col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
       addAttribute(col1Div, "data-aos", "flip-up");
@@ -190,7 +196,7 @@ $(document).ready(function () {
     } else {
       var col3Div = $("<div>");
       // if (i === 3)
-        col3Div.addClass("col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4");
+      col3Div.addClass("col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4");
       // else
       //   col3Div.addClass("col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5");
       addAttribute(col3Div, "data-aos", "flip-up");
