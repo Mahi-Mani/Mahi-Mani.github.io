@@ -96,12 +96,14 @@ $(document).ready(function () {
   // On click of skills button
   $("#learnOne").on("click", function (event) {
     isExpandedAbt = $("#learnOne").attr("aria-expanded");
+    isExpandedContact = "true";
     console.log("I am clicked");
     updateClass();
   })
   // On click of contact me button
   $("#learnTwo").on("click", function (event) {
     isExpandedContact = $("#learnTwo").attr("aria-expanded");
+    isExpandedAbt = "true";
     updateClass();
   })
   // Function that updates classes for collapsed elements
