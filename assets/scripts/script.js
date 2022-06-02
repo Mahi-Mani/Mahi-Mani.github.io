@@ -11,6 +11,7 @@ $(document).ready(function () {
   var isExpandedContact;
   var width;
   var height;
+  var isCollapse;
   // var projectsWidth;
   // var breakPoint;
 
@@ -136,8 +137,14 @@ $(document).ready(function () {
       $(".col2").removeClass("col animated rotateIn");
       console.log("Skills if loop");
       // isExpandedContact = "false";
-      $("#learnOne").children().empty();
-      $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-up"></i></h5>');
+      isCollapse = $("#learnOne").attr("aria-expanded");
+      if (isCollapse === "false") {
+        $("#learnOne").children().empty();
+        $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-up"></i></h5>');
+      } else {
+        $("#learnOne").children().empty();
+        $("#learnOne").append('<h5 class="heading text-light"><i class="fas fa-cogs icon text-light"></i>Skills <i class="fas fa-angle-down"></i></h5>');
+      }
     }
     else if ((isExpandedContact === "false") && ((isExpandedAbt === undefined) || isExpandedAbt === "true")) {
       $(".col1").hide();
@@ -148,8 +155,14 @@ $(document).ready(function () {
       $("#skillset").removeClass("show");
       console.log("Education if loop");
       // isExpandedAbt = "false";
-      $("#learnTwo").children().empty();
-      $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-up"></i></h5>');
+      isCollapse = $("#learnTwo").attr("aria-expanded");
+      if (isCollapse === "false") {
+        $("#learnTwo").children().empty();
+        $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-up"></i></h5>');
+      } else {
+        $("#learnTwo").children().empty();
+        $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-down"></i></h5>');
+      }
     }
   }
 
