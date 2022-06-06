@@ -125,9 +125,6 @@ $(document).ready(function () {
     //   $("#learnTwo").children().empty();
     //   $("#learnTwo").append('<h5 class="heading text-light"><i class="fas fa-school icon text-light"></i> Education <i class="fas fa-angle-up"></i></h5>');
     // }
-    console.log("Inside update class function");
-    console.log("IsExpandedAbt", isExpandedAbt);
-    console.log("IsExpandedContact", isExpandedContact);
     if ((isExpandedAbt === "false") && ((isExpandedContact === undefined) || isExpandedContact === "true")) {
       $(".col1").show();
       $(".col2").hide();
@@ -135,7 +132,6 @@ $(document).ready(function () {
       $(".col1").addClass("col animated rotateIn");
       $("#education").removeClass("show");
       $(".col2").removeClass("col animated rotateIn");
-      console.log("Skills if loop");
       // isExpandedContact = "false";
       isCollapse = $("#learnOne").attr("aria-expanded");
       if (isCollapse === "false") {
@@ -153,7 +149,6 @@ $(document).ready(function () {
       $(".col2").addClass("col animated rotateIn");
       $(".col1").removeClass("col animated rotateIn");
       $("#skillset").removeClass("show");
-      console.log("Education if loop");
       // isExpandedAbt = "false";
       isCollapse = $("#learnTwo").attr("aria-expanded");
       if (isCollapse === "false") {
@@ -257,7 +252,6 @@ $(document).ready(function () {
     $("#projectSection").append(rowDiv);
   }
 
-  console.log(workExperience);
   // Hook work experience to dom
   for (var i = 0; i < workExperience.length; i++) {
     var rowDiv = $("<div>");
@@ -294,9 +288,6 @@ $(document).ready(function () {
 
   // Function to append an element
   function appendElement(parent, child) {
-    console.log("Append Element");
-    console.log(parent);
-    console.log(child);
     parent.append(child);
   }
 
@@ -340,7 +331,6 @@ $(document).ready(function () {
     var desc;
     var link;
     var repoLink;
-    console.log(id);
     for (var i = 0; i < projects.length; i++) {
       if (id === projects[i].id) {
         name = projects[i].name;
@@ -349,7 +339,6 @@ $(document).ready(function () {
         repoLink = projects[i].repoLink;
       }
     }
-    console.log(name);
     $("#modalHeader").text(name);
     $("#modalBody").text(desc);
     $("#link").empty();
