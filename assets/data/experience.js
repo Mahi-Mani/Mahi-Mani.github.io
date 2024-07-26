@@ -1,10 +1,18 @@
 const workExperience = [
   {
+    "companyName": "Santa Clara University",
+    "startDate": "February 2024",
+    "endDate": "Present",
+    "role": "CSEN Grad Intern",
+    "responsibilities": ["Analyzed large text reflections from product users using NLP techniques.", "Designed and developed data visualizations using Javascript.",
+                        "Developed backend functionality using Django framework including REST API creation.", "Managed and maintained database operations, performance enhancement."]
+  },
+  {
     "companyName": "Trilogy Education Services",
     "startDate": "November 2019",
-    "endDate": "Present",
+    "endDate": "July 2021",
     "role": "Full Stack Teaching Assistant",
-    "responsibilities": ["Assisted a total of 30 students", "Analyzed code and helped students fix issues with their projects",
+    "responsibilities": ["Assisted a total of 120 students", "Analyzed code and helped students fix issues with their projects",
                         "Helped the instructor with curriculum development", "Responsible for improving technical skills of students",
                       "Mentored students in their projects and evaluated their assignments"]
   },
