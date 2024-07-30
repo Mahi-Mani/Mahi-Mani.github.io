@@ -1,14 +1,19 @@
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
   /* background-color: brown; */
 }
+
 #home,
 #projects,
-#contact {
+#workExperience
+/* #contact  */
+{
   background-color: teal;
   /* background-image: url("../images/blue-background.jpg"); */
   padding-top: 50px;
@@ -21,6 +26,15 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#contact {
+  background-color: #CC7722;
+}
+
+#workExperience {
+  color: white;
+}
+
 /* #home {
   width: 100%;
 } */
@@ -28,6 +42,7 @@ html, body {
   font-family: 'Unica One', cursive;
   font-size: 3ch;
 }
+
 /* .navbar-toggler {
   border-color: red;
   background-color: black;
@@ -35,19 +50,24 @@ html, body {
 .fa-bars {
   color: red;
 }
+
 .portfolio,
 .contact {
   color: white;
   text-align: center;
 }
+
 .work {
-  color: #21618c;
+  /* color: #21618c; */
+  color: white;
   text-align: center;
 }
+
 .wrapper {
   /* position: relative; */
   /* width: 50%; */
 }
+
 .wrapper:hover .image {
   opacity: 0.3;
 }
@@ -87,6 +107,7 @@ html, body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 /* .textOverlay1 {
   color: white !important;
   font-size: 20px;
@@ -109,101 +130,120 @@ html, body {
   transform: translate(-50%, -50%);
   text-align: center;
 } */
-.nav-link, 
+.nav-link,
 .headerContent,
 #about,
-.scroll > a {
+.scroll>a {
   color: white !important;
 }
+
 .active {
-  color:red !important;
+  color: red !important;
 }
+
 .card-text {
   color: #21618c;
 }
+
 .headerContent {
   font-family: 'Merienda', cursive;
   font-size: 44px;
   text-align: center;
   margin-top: 20%;
 }
+
 .scroll {
   margin-top: 125px;
   /* margin-bottom: 0; */
   text-align: center;
 }
+
 /* header{
   position:fixed;
 } */
-.slideImage{
-cursor: pointer;
-width: 50%;
-margin: auto; 
+.slideImage {
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
 }
-#headerCard{
+
+#headerCard {
   background-color: black;
   align-items: center;
-  margin-top:30px;
+  margin-top: 30px;
 }
-#profile{
+
+#profile {
   border-radius: 50%;
   float: center;
   display: block;
   margin-top: -20px;
-  margin-bottom:15px;
+  margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 10px 10px 5px grey;
 }
-.hl{
-    border-top: 2px solid #21618c;
+
+.hl {
+  border-top: 2px solid #21618c;
 }
+
 .vl {
   border-left: 2px solid #21618c;
   height: 100px;
   position: absolute;
   left: 50%;
 }
+
 .bulletVl {
-  border-left: 2px solid #21618c;
+  /* border-left: 2px solid #21618c; */
+  border-left: 2px solid white;
   margin-left: 6%;
   height: 100%;
 }
-#contact-me{
-  float:right;
+
+#contact-me {
+  float: right;
   margin-left: 250px;
 }
+
 #contactContent {
   margin: 13%;
 }
 
-.text{
+.text {
   font-family: 'Quicksand', sans-serif;
-  color:#21618c;
+  color: #21618c;
 }
-#name{
+
+#name {
   margin-top: 0px;
 }
-.title{
+
+.title {
   /* font-family: 'Anton', sans-serif;
   color:#C70039; */
   margin-bottom: 0px;
 }
-.heading{
+
+.heading {
   font-family: 'Anton', sans-serif;
   font-family: 'Lobster', cursive;
-  color:#21618c;
+  color: #21618c;
 }
-.btnTxt{
+
+.btnTxt {
   font-family: 'Anton', sans-serif;
   font-family: 'Lobster', cursive;
   font-family: 'Shadows Into Light', cursive;
   margin-bottom: 100px;
 }
-.icon{
-  color:#21618c;
+
+.icon {
+  color: #21618c;
 }
-#card-profile{
+
+#card-profile {
   border-radius: 50%;
   float: center;
   display: block;
@@ -212,7 +252,8 @@ margin: auto;
   margin-right: auto;
   box-shadow: 10px 10px 5px grey;
 }
-#bg{
+
+#bg {
   position: relative;
   height: 150px;
   box-shadow: 10px 10px 5px grey;
@@ -221,10 +262,14 @@ margin: auto;
   -o-background-size: cover;
   background-size: cover;
 }
+
 .card {
-  margin: 0 auto; /* Added */
-  float: none; /* Added */
-  margin-bottom: 10px; /* Added */
+  margin: 0 auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 10px;
+  /* Added */
 }
 
 .hvr-grow {
@@ -238,7 +283,10 @@ margin: auto;
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -256,6 +304,7 @@ margin: auto;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .hvr-shutter-in-horizontal:before {
   content: "";
   position: absolute;
@@ -278,10 +327,16 @@ margin: auto;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-shutter-in-horizontal:hover, .hvr-shutter-in-horizontal:focus, .hvr-shutter-in-horizontal:active {
+
+.hvr-shutter-in-horizontal:hover,
+.hvr-shutter-in-horizontal:focus,
+.hvr-shutter-in-horizontal:active {
   color: white;
 }
-.hvr-shutter-in-horizontal:hover:before, .hvr-shutter-in-horizontal:focus:before, .hvr-shutter-in-horizontal:active:before {
+
+.hvr-shutter-in-horizontal:hover:before,
+.hvr-shutter-in-horizontal:focus:before,
+.hvr-shutter-in-horizontal:active:before {
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
 }
@@ -297,44 +352,53 @@ margin: auto;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
 }
-.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+
+.hvr-glow:hover,
+.hvr-glow:focus,
+.hvr-glow:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 /* Media queries */
 @media only screen and (min-width: 320px) {
-  html, body {
+
+  html,
+  body {
     max-width: 100%;
     overflow-x: hidden;
   }
+
   /* #projects,
   #workExperience {
     background-image: none;
     background-color: yellow;
     } */
-    .image {
-      width: 100%;
-      object-fit: contain;
-    }
-    .modal {
-      margin: 0 auto;
-    }
-    /* .modal-dialog {
+  .image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .modal {
+    margin: 0 auto;
+  }
+
+  /* .modal-dialog {
       max-width: 30%;
       max-height: 40%;
     } */
-    .textOverlay {
-      color: white !important;
-      font-size: 12px;
-      position: absolute;
-      margin-top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    /* .textOverlay1 {
+  .textOverlay {
+    color: white !important;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* .textOverlay1 {
       color: white !important;
       font-size: 15px;
       position: absolute;
@@ -346,7 +410,7 @@ margin: auto;
       transform: translate(-50%, -50%);
       text-align: center;
     } */
-    /* .textOverlay2 {
+  /* .textOverlay2 {
       color: white !important;
       font-size: 15px;
       position: absolute;
@@ -358,45 +422,54 @@ margin: auto;
       text-align: center;
     } */
 }
+
 @media only screen and (min-width: 414px) {
-  html, body {
+
+  html,
+  body {
     max-width: 100%;
     overflow-x: hidden;
   }
+
   /* #projects,
   #workExperience {
     background-image: none;
     background-color: blue;
     } */
-    .image {
-      width: 100%;
-      object-fit: contain;
-    }
-    #contactContent {
-      text-align: center;
-    }
-    .modal {
-      margin: 0 auto;
-    }
-    /* .modal-dialog {
+  .image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  #contactContent {
+    text-align: center;
+  }
+
+  .modal {
+    margin: 0 auto;
+  }
+
+  /* .modal-dialog {
       max-width: 30%;
       max-height: 40%;
     } */
-    .textOverlay {
-      color: white !important;
-      font-size: 12px;
-      position: absolute;
-      margin-top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    .learnMore {
-      font-size: 12px;
-    }
-    /* .textOverlay1 {
+  .textOverlay {
+    color: white !important;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .learnMore {
+    font-size: 12px;
+  }
+
+  /* .textOverlay1 {
       color: white !important;
       font-size: 15px;
       position: absolute;
@@ -408,7 +481,7 @@ margin: auto;
       transform: translate(-50%, -50%);
       text-align: center;
     } */
-    /* .textOverlay2 {
+  /* .textOverlay2 {
       color: white !important;
       font-size: 15px;
       position: absolute;
@@ -422,44 +495,52 @@ margin: auto;
 }
 
 @media only screen and (min-width: 576px) {
-  html, body {
+
+  html,
+  body {
     max-width: 100%;
     overflow-x: hidden;
   }
+
   /* #projects,
   #workExperience {
     background-image: none;
     background-color: violet;
     } */
-    .image {
-      width: 100%;
-      object-fit: contain;
-    }
-    #contactContent {
-      text-align: center;
-    }
-    .modal {
-      margin: 0 auto;
-    }
-    /* .modal-dialog {
+  .image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  #contactContent {
+    text-align: center;
+  }
+
+  .modal {
+    margin: 0 auto;
+  }
+
+  /* .modal-dialog {
       max-width: 30%;
       max-height: 40%;
     } */
-    .textOverlay {
-      color: white !important;
-      font-size: 12px;
-      position: absolute;
-      margin-top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    .learnMore {
-      font-size: 12px;
-    }
-    /* .textOverlay1 {
+  .textOverlay {
+    color: white !important;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .learnMore {
+    font-size: 12px;
+  }
+
+  /* .textOverlay1 {
       color: white !important;
       font-size: 15px;
       position: absolute;
@@ -471,7 +552,7 @@ margin: auto;
       transform: translate(-50%, -50%);
       text-align: center;
     } */
-    /* .textOverlay2 {
+  /* .textOverlay2 {
       color: white !important;
       font-size: 15px;
       position: absolute;
@@ -485,13 +566,17 @@ margin: auto;
 }
 
 @media only screen and (min-width: 768px) {
-  html, body {
+
+  html,
+  body {
     max-width: 100%;
     overflow-x: hidden;
   }
+
   .modal {
     margin: 0 auto;
   }
+
   /* .modal-dialog {
     max-width: 30%;
     max-height: 40%;
@@ -507,9 +592,11 @@ margin: auto;
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
   .learnMore {
     font-size: 15px;
   }
+
   /* .textOverlay1 {
     color: white !important;
     font-size: 15px;
@@ -537,6 +624,7 @@ margin: auto;
     width: 100%;
     object-fit: contain;
   }
+
   /* #projects,
   #workExperience {
   background-image: none;
@@ -545,27 +633,32 @@ margin: auto;
 }
 
 @media only screen and (min-width: 992px) {
-  html, body {
+
+  html,
+  body {
     max-width: 100%;
     overflow-x: hidden;
   }
+
   /* #projects,
   #workExperience {
     background-image: none;
     background-color: black;
     } */
-    .image {
-      width: 100%;
-      object-fit: contain;
-    }
-    .modal {
-      margin: 0 auto;
-    }
-    /* .modal-dialog {
+  .image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .modal {
+    margin: 0 auto;
+  }
+
+  /* .modal-dialog {
       max-width: 30%;
       max-height: 40%;
     } */
-    /* .textOverlay1 {
+  /* .textOverlay1 {
       color: white !important;
       font-size: 20px;
       position: absolute;
@@ -576,21 +669,23 @@ margin: auto;
       transform: translate(-50%, -50%);
       text-align: center;
     } */
-    .textOverlay {
-      color: white !important;
-      font-size: 20px;
-      position: absolute;
-      margin-top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    .learnMore {
-      font-size: 20px;
-    }
-    /* .textOverlay2 {
+  .textOverlay {
+    color: white !important;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .learnMore {
+    font-size: 20px;
+  }
+
+  /* .textOverlay2 {
       color: white !important;
       font-size: 20px;
       position: absolute;
@@ -604,10 +699,13 @@ margin: auto;
 }
 
 @media only screen and (min-width: 1200px) {
-  html, body {
+
+  html,
+  body {
     max-width: 100%;
     overflow-x: hidden;
   }
+
   /* .image {
     width: 643px;
   } */
@@ -615,33 +713,37 @@ margin: auto;
     width: 100%;
     object-fit: contain;
   }
+
   /* #projects,
   #workExperience {
     background-image: none;
     background-color: red;
     } */
-    .modal {
-      margin: 0 auto;
-    }
-    /* .modal-dialog {
+  .modal {
+    margin: 0 auto;
+  }
+
+  /* .modal-dialog {
       max-width: 30%;
       max-height: 40%;
     } */
-    .textOverlay {
-      color: white !important;
-      font-size: 20px;
-      position: absolute;
-      margin-top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    .learnMore {
-      font-size: 20px;
-    }
-    /* .textOverlay1 {
+  .textOverlay {
+    color: white !important;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .learnMore {
+    font-size: 20px;
+  }
+
+  /* .textOverlay1 {
       color: white !important;
       font-size: 20px;
       position: absolute;
@@ -652,7 +754,7 @@ margin: auto;
       transform: translate(-50%, -50%);
       text-align: center;
     } */
-    /* .textOverlay2 {
+  /* .textOverlay2 {
       color: white !important;
       font-size: 20px;
       position: absolute;
@@ -664,9 +766,3 @@ margin: auto;
       text-align: center;
     } */
 }
-
-
-
-
-
-

@@ -53,20 +53,20 @@ $(document).ready(function () {
         }
       }
     }
-    if ($(this).scrollTop() >= $('#projects').position().top) {
-      var navBtn = document.getElementsByClassName("navbtn");
+    // if ($(this).scrollTop() >= $('#projects').position().top) {
+    //   var navBtn = document.getElementsByClassName("navbtn");
 
-      for (var i = 0; i < navBtn.length; i++) {
-        if (navBtn[i].dataset.nav === "projects") {
-          $("#navProjects").addClass("active");
-          $("#navHome").removeClass("active");
-          $("#navAbout").removeClass("active");
-          $("#navWork").removeClass("active");
-          $("#navContact").removeClass("active");
-        }
-      }
-    }
-    if ($(this).scrollTop() >= $('#workExperience').position().top) {
+    //   for (var i = 0; i < navBtn.length; i++) {
+    //     if (navBtn[i].dataset.nav === "projects") {
+    //       $("#navProjects").addClass("active");
+    //       $("#navHome").removeClass("active");
+    //       $("#navAbout").removeClass("active");
+    //       $("#navWork").removeClass("active");
+    //       $("#navContact").removeClass("active");
+    //     }
+    //   }
+    // }
+    if ($(this).scrollTop() > $('#workExperience').position().top) {
       var navBtn = document.getElementsByClassName("navbtn");
 
       for (var i = 0; i < navBtn.length; i++) {
@@ -79,7 +79,7 @@ $(document).ready(function () {
         }
       }
     }
-    if ($(this).scrollTop() >= $('#contact').position().top) {
+    if ($(this).scrollTop() > $('#contact').position().top) {
       var navBtn = document.getElementsByClassName("navbtn");
 
       for (var i = 0; i < navBtn.length; i++) {

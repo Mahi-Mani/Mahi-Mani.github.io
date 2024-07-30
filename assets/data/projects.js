@@ -1,3 +1,5 @@
+// All heroku applications not working
+// Find one hosting service that will host web pages
 const projects = [
   {
     "id": 0,
@@ -18,6 +20,7 @@ const projects = [
     "ratio": 1
   },
   {
+    // Working
     "id": 2,
     "name": "Train Scheduler",
     "link": "https://mahi-mani.github.io/TrainScheduler/",
@@ -27,6 +30,7 @@ const projects = [
     "ratio": 1
   },
   {
+    // Working
     "id": 3,
     "name": "ToDoList",
     "link": "https://mahi-mani.github.io/ToDoList/",
@@ -36,6 +40,7 @@ const projects = [
     "ratio": 1 
   },
   {
+    // Working
     "id": 4,
     "name": "Memory Game",
     "link": "https://mahi-mani.github.io/Memory-Game/",
@@ -45,6 +50,7 @@ const projects = [
     "ratio": 1
   },
   {
+    // Working
     "id": 5,
     "name": "Baefit",
     "link": "https://bryanjacinto1994.github.io/BaeFit-Workouts/",
@@ -54,6 +60,7 @@ const projects = [
     "ratio": 1
   },
   {
+    // Working
     "id": 6,
     "name": "Emoji Finder",
     "link": "https://mahi-mani.github.io/Emoji-Finder/",
