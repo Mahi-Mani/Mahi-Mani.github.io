@@ -4,6 +4,7 @@ const workExperience = [
     "startDate": "February 2024",
     "endDate": "Present",
     "role": "CSEN Grad Intern",
+    "location": "Santa Clara",
     "responsibilities": ["Analyzed large text reflections from product users using NLP techniques.", "Designed and developed data visualizations using Javascript.",
                         "Developed backend functionality using Django framework including REST API creation.", "Managed and maintained database operations, performance enhancement."]
   },
@@ -12,6 +13,7 @@ const workExperience = [
     "startDate": "November 2019",
     "endDate": "July 2021",
     "role": "Full Stack Teaching Assistant",
+    "location": "San Francisco",
     "responsibilities": ["Assisted a total of 120 students", "Analyzed code and helped students fix issues with their projects",
                         "Helped the instructor with curriculum development", "Responsible for improving technical skills of students",
                       "Mentored students in their projects and evaluated their assignments"]
@@ -21,6 +23,7 @@ const workExperience = [
     "startDate": "September 2020",
     "endDate": "November 2020",
     "role": "Front End Developer - Intern",
+    "location": "San Jose",
     "responsibilities": ["Responsible for building intuitive UIs for both iOS and Android platforms", "Worked on transforming native iOS apps to React native",
                         "Leveraged Redux framework for transient app state", "Handled RESTful APIs which support JSON to access backend data",
                         "Implemented component life cycle architecture, store actions to handle real time data from third party APIs",
@@ -31,6 +34,7 @@ const workExperience = [
     "startDate": "June 2016",
     "endDate": "July 2018",
     "role": "Programmer Analyst",
+    "location": "India",
     "responsibilities": ["Engaged in L2 / L3 technical support regarding application issues and serviced multiple standard requests from external business partners and customers",
                         "Developed script to automate job flows that reduced manual effort by 70%",
                         "Responsible for observing 24/7 application availability through a structured monitoring framework",

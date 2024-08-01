@@ -12,11 +12,12 @@ body {
 /* #home, */
 #projects,
 #workExperience
+
 /* #contact  */
-{
+  {
   background-color: teal;
-  /* background-image: linear-gradient(to right bottom,teal,#5d92ba); */
   /* background-image: linear-gradient(to right bottom, #CC7722 15%, teal 50%); */
+  background-image: linear-gradient(to right bottom, #CC7722 50%, teal 50%);
   /* background-image: url("../images/blue-background.jpg"); */
   padding-top: 50px;
   width: 100%;
@@ -44,7 +45,12 @@ body {
 }
 
 #contact {
-  background-color: #CC7722;
+  /* background-color: #CC7722; */
+  background-color: teal;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #workExperience {
@@ -77,6 +83,11 @@ body {
   /* color: #21618c; */
   color: white;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: xx-large;
+  font-style: normal;
 }
 
 .wrapper {
@@ -146,7 +157,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 } */
- /* Are the changes reflected? */
+/* Are the changes reflected? */
 .nav-link,
 .headerContent,
 #about,
@@ -213,10 +224,14 @@ body {
 }
 
 .bulletVl {
-  /* border-left: 2px solid #21618c; */
-  border-left: 2px solid white;
+  border-left: 2px solid teal;
+  /* border-left: 2px solid white; */
   margin-left: 6%;
   height: 100%;
+}
+
+.fa-dot-circle {
+  color: #FFFFF0;
 }
 
 #contact-me {
@@ -258,6 +273,28 @@ body {
 
 .icon {
   color: #21618c;
+}
+
+.role {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: xx-large;
+  font-style: normal;
+}
+
+.experience {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: larger;
+  font-style: italic;
+}
+
+.desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: large;
+  font-style: normal;
 }
 
 #card-profile {

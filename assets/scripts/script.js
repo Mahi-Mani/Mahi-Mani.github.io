@@ -277,13 +277,14 @@ $(document).ready(function () {
     addClassValue(verticalDiv, "bulletVl");
     var ulTag = $("<ul>");
     for (var j = 0; j < workExperience[i].responsibilities.length; j++) {
-      ulTag.append("<li>" + workExperience[i].responsibilities[j] + "</li>");
+      ulTag.append("<li class='desc'>" + workExperience[i].responsibilities[j] + "</li>");
     }
     appendElement(col2Div, "<i class='fas fa-dot-circle'></i>");
     appendElement(col2Div, verticalDiv);
-    appendElement(col3Div, "<h1>" + workExperience[i].startDate.toUpperCase() + " - " + workExperience[i].endDate.toUpperCase() + "</h1>");
-    appendElement(col3Div, "<h2>" + workExperience[i].companyName + "</h2>");
-    appendElement(col3Div, "<h3>" + workExperience[i].role + "</h3>");
+    appendElement(col3Div, "<p class='role'><i class='fas fa-laptop-code'></i>" + workExperience[i].role + "</p>");
+    appendElement(col3Div, "<p class='experience'><i class='fas location-dot'></i> " + workExperience[i].companyName + ", " + workExperience[i].location
+      + " | " + "<i class='fas fa-calendar'></i> " + workExperience[i].startDate + " - " + workExperience[i].endDate + "</p>");
+    // appendElement(col3Div, "<p class='date'>" + workExperience[i].startDate + " - " + workExperience[i].endDate + "</p>");
     appendElement(col3Div, ulTag);
     appendElement(rowDiv, col1Div);
     appendElement(rowDiv, col2Div);
