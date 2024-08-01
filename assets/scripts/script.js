@@ -282,7 +282,7 @@ $(document).ready(function () {
     appendElement(col2Div, "<i class='fas fa-dot-circle'></i>");
     appendElement(col2Div, verticalDiv);
     appendElement(col3Div, "<p class='role'><i class='fas fa-laptop-code'></i>" + workExperience[i].role + "</p>");
-    appendElement(col3Div, "<p class='experience'><i class='fas location-dot'></i> " + workExperience[i].companyName + ", " + workExperience[i].location
+    appendElement(col3Div, "<p class='experience'><i class='bi-geo-alt-fill'></i> " + workExperience[i].companyName + ", " + workExperience[i].location
       + " | " + "<i class='fas fa-calendar'></i> " + workExperience[i].startDate + " - " + workExperience[i].endDate + "</p>");
     // appendElement(col3Div, "<p class='date'>" + workExperience[i].startDate + " - " + workExperience[i].endDate + "</p>");
     appendElement(col3Div, ulTag);
