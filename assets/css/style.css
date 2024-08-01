@@ -77,6 +77,11 @@ body {
 .contact {
   color: white;
   text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  /* font-size: xx-large; */
 }
 
 .work {
@@ -87,6 +92,13 @@ body {
   font-optical-sizing: auto;
   font-weight: 700;
   font-size: xx-large;
+  font-style: normal;
+}
+
+.links{
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
   font-style: normal;
 }
 
