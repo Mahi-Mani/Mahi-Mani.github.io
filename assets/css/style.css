@@ -84,6 +84,10 @@ body {
   /* font-size: xx-large; */
 }
 
+/* .summary {
+  box-shadow: 10px 10px 10px #FAF9F6;
+} */
+
 .work {
   /* color: #21618c; */
   color: white;
@@ -92,7 +96,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 700;
   font-size: xx-large;
-  font-style: normal;
+  font-style: normal; 
 }
 
 .links{
