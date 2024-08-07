@@ -292,6 +292,13 @@ $(document).ready(function () {
     appendElement(rowDiv, col4Div);
     $("#workExperience").append(rowDiv);
     $("#workExperience").append("<br>");
+    // if (i == workExperience.length - 1) {
+      // $("#workExperience").append("<div class='row'><div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'></div><div class='col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8'><p>Click <a href='./portfolio.html'>here</a> to learn more about my projects</p></div><div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'></div></div>");
+      // $("#workExperience").append("<div class='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>");
+      // $("#workExperience").append("<p>Click <a href='./portfolio.html'>here</a> to learn more about my projects</p>");
+      // $("#workExperience").append("</div>");
+      // $("#workExperience").append("</div>");
+    // }
   }
 
   // Function to append an element
