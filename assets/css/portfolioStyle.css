@@ -30,6 +30,12 @@ body {
     font-style: normal;
 }
 
+.top-left{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
 #home,
 #contact {
     /* background-color: teal; */

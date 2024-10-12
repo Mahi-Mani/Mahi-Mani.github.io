@@ -14,6 +14,8 @@ $(document).ready(function () {
   var isCollapse;
   // var projectsWidth;
   // var breakPoint;
+  $("#skillset").show();
+  $("#education").show();
 
   $(window).resize(function () {
     width = wrapper.width();
@@ -151,7 +153,7 @@ $(document).ready(function () {
       // $(".col2").removeClass("col animated rotateIn");
       $(".col2").addClass("col animated rotateIn");
       $(".col1").removeClass("col animated rotateIn");
-      $("#skillset").removeClass("show");
+      // $("#skillset").removeClass("show");
       // isExpandedAbt = "false";
       console.log("Education if loop");
       console.log(isCollapse);

@@ -3,7 +3,7 @@ const workExperience = [
     "companyName": "Santa Clara University",
     "startDate": "February 2024",
     "endDate": "Present",
-    "role": "CSEN Grad Intern",
+    "role": "Software Engineer Intern/Research Assistant",
     "location": "Santa Clara",
     "responsibilities": ["Analyzed large text reflections from product users using NLP techniques.", "Designed and developed data visualizations using Javascript.",
                         "Developed backend functionality using Django framework including REST API creation.", "Managed and maintained database operations, performance enhancement."]

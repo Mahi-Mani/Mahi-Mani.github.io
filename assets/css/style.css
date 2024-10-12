@@ -165,6 +165,41 @@ color: teal;
   text-align: center;
 }
 
+.container-image{
+  position: relative;
+  text-align: center;
+  color: #E4A11B;
+}
+
+.project-summary{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: larger;
+  font-style: normal;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  box-shadow: 1px 1px 1px #E4A11B;
+}
+
+.button-text{
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: larger;
+  font-style: normal;
+}
+
 /* .textOverlay1 {
   color: white !important;
   font-size: 20px;
@@ -240,6 +275,24 @@ color: teal;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 10px 10px 5px grey;
+}
+
+.projectImage {
+    box-shadow: 10px 10px 5px grey;
+    filter: blur(2px);
+  /* -webkit-filter: blur(2px); */
+}
+
+.project-general-heading{
+  font-family: "Rhodium Libre", serif;
+  font-weight: 700;
+  font-size: xx-large;
+  font-style: normal;
+  color: #E4A11B;
+}
+
+.hlsmall {
+  border-top: 2px solid #21618c;
 }
 
 .hl {
