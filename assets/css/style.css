@@ -179,6 +179,16 @@ color: teal;
   font-style: normal;
 }
 
+.project-general-heading {
+  text-align: center;
+}
+
+.loadall {
+  /* align-items: center; */
+  display: block;
+  margin: auto;
+}
+
 .centered {
   position: absolute;
   top: 50%;
