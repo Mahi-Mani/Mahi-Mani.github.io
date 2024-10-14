@@ -192,6 +192,21 @@ color: teal;
   box-shadow: 1px 1px 1px #E4A11B;
 }
 
+@media only screen and (max-width: 930px) {
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: small;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    box-shadow: 1px 1px 1px #E4A11B;
+  }
+}
+
 .button-text{
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
