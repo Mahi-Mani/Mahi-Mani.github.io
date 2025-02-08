@@ -15,6 +15,13 @@ body {
     /* background-color: brown; */
 }
 
+.techskills {
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
 /* Add media queries */
 
 .centered {
