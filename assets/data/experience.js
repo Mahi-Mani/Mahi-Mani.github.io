@@ -5,9 +5,9 @@ const workExperience = [
     "endDate": "Present",
     "role": "Software Engineer Intern/ Research Assistant",
     "location": "Santa Clara",
-    "responsibilities": ["Analyze user feedback via NLP for improved insight accuracy and data-driven decisions.", "Develop 20+ custom REST APIs using Django framework to support various business logic and ensuring seamless frontend integration.",
-                        "Engineer interactive data visualizations using JavaScript frameworks, d3.js to deliver intuitive and responsive user interfaces, reducing time spent on report by 50%.", "Resolve complex multi-label text classification problems by integrating machine learning models into web frameworks to enhance application functionality.",
-                      "Enhance model prediction accuracy through continuous refinement and data-driven optimizations."]
+    "responsibilities": ["Perform sentiment analysis on user feedback entries using the NLTK library, identifying insights that increased user engagement with sustainability features by 10%.", "Classify user feedback into multiple labels using Binary Relevance and Logistic Regression, achieving an 18% accuracy improvement through hyperparameter tuning and addressing class imbalances with SMOTE.",
+                        "Optimize model performance by extracting and prioritizing the top 15% of impactful features using feature importance analysis, resulting in faster predictions.", "Engineer a Django-based full-stack web application integrating the best-performing model, enabling real-time prediction and classification of new user feedback with 88% accuracy.",
+                      "Design and develop interactive frontend visualizations using JavaScript and Chart.js to simplify feedback analysis, introducing label-specific text highlighting and distribution charts, which streamlined complex data review processes."]
   },
   {
     "companyName": "Trilogy Education Services",
